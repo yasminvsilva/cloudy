@@ -5,8 +5,8 @@ export default function Inicial() {
   return (
     <div>
         <div>
-            <h1 className='font-karla font-bold text-[25px] mt-16 mb-10 '><span className='text-roxo-titulo'>Recupere</span> suas noites, <span className='text-roxo-titulo'>renove</span> suas energias</h1>
-            <p className='font-overpass text-[16px] text-justify mb-10'>Experimente o Cloudy como uma abordagem para melhorar as suas noites de sono</p>
+            <h1 className='font-karla font-bold text-[28px] mt-16 mb-10 '><span className='text-roxo-titulo'>Recupere</span> suas noites, <span className='text-roxo-titulo'>renove</span> suas energias</h1>
+            <p className='font-overpass text-[18px] text-justify mb-10'>Experimente o Cloudy como uma abordagem para melhorar as suas noites de sono</p>
       
             <div className='flex justify-between gap-3 mb-20'>
                 <button className='w-[160px] h-[38px] font-karla text-branco text-[14px] bg-roxo-claro rounded-l-xl rounded-br-3xl hover:cursor-pointer border-2 border-transparent hover:bg-branco hover:text-roxo-claro hover:border-roxo-claro hover:border-2 transition-colors duration-300 ease-in-out'>Saiba mais</button>
