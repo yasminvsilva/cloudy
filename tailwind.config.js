@@ -12,7 +12,6 @@ export default {
       },
 
       colors: {
-        // página inicial
         'branco': '#FFF',
         'roxo-claro': '#C0AEE7',
         'roxo-titulo': '#735EA0',
@@ -20,7 +19,6 @@ export default {
         'azul-titulo': '#4C8293',
         'azul-carrossel': '#9EBFD1',
         'secao-diferencial': '#E9EFFF',
-        // página de referências/sobre nós
         'cinza': '#616161',
         // página de guia
         // página de materiais

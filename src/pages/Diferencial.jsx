@@ -21,9 +21,9 @@ export default function Diferencial() {
 
         <div className='mb-16 flex justify-center space-x-1'>
             <button className="bg-azul-carrossel rounded-full h-3 w-[40px]"></button>
-            <button className="bg-[#CFCFCF] rounded-full h-3 w-[20px]"></button>
-            <button className="bg-[#CFCFCF] rounded-full h-3 w-[20px]"></button>
-            <button className="bg-[#CFCFCF] rounded-full h-3 w-[20px]"></button>
+            <button className="bg-[#CFCFCF] rounded-full h-3 w-[16px]"></button>
+            <button className="bg-[#CFCFCF] rounded-full h-3 w-[16px]"></button>
+            <button className="bg-[#CFCFCF] rounded-full h-3 w-[16px]"></button>
         </div>
     </div>
   )
