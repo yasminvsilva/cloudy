@@ -9,8 +9,8 @@
 //])
 
 import Home from "./pages/Home"
-import SobreNos from "./pages/SobreNos"
 import Referencias from "./pages/Referencias"
+import SobreNos from "./pages/SobreNos"
 import Footer from "./pages/Footer"
 
 export default function App() {

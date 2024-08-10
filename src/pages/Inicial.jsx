@@ -1,5 +1,6 @@
 import scroll from '../assets/scroll.svg'
 import images from '../assets/imagensTeste.svg'
+import ScrollComponent from '../components/ScrollComponent'
 
 export default function Inicial() {
   return (
@@ -18,9 +19,10 @@ export default function Inicial() {
               <img src={images} alt="" />
             </div>
 
-            <div className='mt-[60px] mb-[94px] flex items-center justify-center'>
+            <ScrollComponent />
+            {/* <div className='mt-[60px] mb-[94px] flex items-center justify-center'>
               <img className='hover:cursor-pointer'src={scroll} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
   )
