@@ -21,6 +21,10 @@ export default {
         'secao-diferencial': '#E9EFFF',
         'cinza': '#616161',
         // página de guia
+        'roxo-guia': '#DCD2F3',
+        'verde-guia': '#E5FFDC',
+        'azul-guia': '#D1DEFF',
+        'linha': '#B1B1B1',
         // página de materiais
       },
     },

@@ -1,8 +1,8 @@
 import scroll from '../assets/scroll.svg'
 
-const ScrollComponent = () => {
+const Scroll = () => {
   const handleScroll = () => {
-    const targetElement = document.getElementById('target-section')
+    const targetElement = document.getElementById('referencia')
 
     if (targetElement) {
       targetElement.scrollIntoView({
@@ -24,4 +24,4 @@ const ScrollComponent = () => {
   );
 };
 
-export default ScrollComponent;
+export default Scroll;
