@@ -7,7 +7,7 @@ export default function Guia() {
     <div>
         <Header />
         <div>
-            <h1 className="font-karla font-bold text-[25px] text-center mt-16 mb-8">Veja como é <span style={{background: 'linear-gradient(to right, #735EA0 0%, #5EA079 50%, #4C8293 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>fácil</span> <br></br> utilizar o Cloudy</h1>
+            <h1 className="font-karla font-bold text-[25px] text-center mt-16 mb-8 leading-[125%]">Veja como é <span className="text-roxo-titulo">fácil</span> <br></br> <span className="text-roxo-claro">utilizar</span> o Cloudy</h1>
             <img className="mb-20 m-auto" src={bolinhas} />
         </div>
 
