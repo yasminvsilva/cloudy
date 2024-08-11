@@ -11,7 +11,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <main className="px-[32px] py-[50px] lg:px-[100px]">
+        <main className="px-[32px] py-[50px]">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/guia" element={<Guia />} />
