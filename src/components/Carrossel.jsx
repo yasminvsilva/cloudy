@@ -48,9 +48,9 @@ const Carrossel = () => {
       <div
         className={`transform transition-transform duration-500 ease-in-out ${ isAnimating ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100' }`}>
         <div className='flex flex-col items-center'>
-          <img className='w-10 mb-2.5' src={slides[currentIndex].image} alt={slides[currentIndex].title} />
-          <h3 className='font-karla font-bold text-[14px] text-center mb-1.5'>{slides[currentIndex].title}</h3>
-          <p className='font-overpass text-[12px] text-center'>{slides[currentIndex].description}</p>
+          <img className='w-10 mb-3' src={slides[currentIndex].image} alt={slides[currentIndex].title} />
+          <h3 className='font-karla font-bold text-[15px] text-center mb-1.5'>{slides[currentIndex].title}</h3>
+          <p className='font-overpass text-[13px] text-center'>{slides[currentIndex].description}</p>
         </div>
       </div>
     </div>
