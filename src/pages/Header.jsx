@@ -18,7 +18,7 @@ export default function Header() {
       </div>
 
       {/* header desktop */}
-      {/* <div className='hidden md:flex gap-10 font-overpass'>
+      <div className='hidden md:flex gap-10 font-overpass'>
         <button>Home</button>
         <button>Guia</button>
         <button>Materiais</button>
@@ -26,11 +26,11 @@ export default function Header() {
       </div>
 
       <div className='hidden md:flex font-karla'>
-        <button className='border-2 border-roxo-claro rounded-[13px] w-[180px] h-[40px] text-roxo-claro hover:bg-roxo-claro hover:text-white hover:border-roxo-claro transition-colors duration-300 ease-in-out'>Entre em contato</button>
-      </div> */}
+        <button className='border-2 border-roxo-claro rounded-[10px] w-[170px] h-[30px] text-roxo-claro hover:bg-roxo-claro hover:text-white hover:border-roxo-claro transition-colors duration-300 ease-in-out'>Entre em contato</button>
+      </div>
       
       {/* header mobile */}
-      <div className='flex justify-between gap-1'>
+      <div className='block hidden flex justify-between gap-1'>
         <img className='hover:cursor-pointer' src={iconeHeader} alt="" />
         <img
         className="hover:cursor-pointer transition-transform duration-300 ease-in-out"

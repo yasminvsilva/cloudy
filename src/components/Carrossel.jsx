@@ -36,8 +36,7 @@ const Carrossel = () => {
       setIsAnimating(true);
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-        setIsAnimating(false);
-      }, 600);
+        setIsAnimating(false);}, 600);
     }, 3000);
 
     return () => clearInterval(interval);
