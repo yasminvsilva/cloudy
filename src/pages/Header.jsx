@@ -13,20 +13,28 @@ export default function Header() {
 
   return (
     <div className='flex justify-between'>
-      <div className='hover:cursor-pointer flex justify-between' onClick={() => navegacao('/')}>
+      <div className='
+      md:w-[80px]
+      hover:cursor-pointer flex justify-between' onClick={() => navegacao('/')}>
         <img src={logo} alt="Logo" />
       </div>
 
       {/* header desktop */}
-      <div className='hidden md:flex gap-10 font-overpass'>
-        <button>Home</button>
+      <div className=' 
+      lg:flex lg:gap-10
+      md:flex md:text-[14px] md:gap-5 justify-center
+      gap-8 font-karla hidden'>
+        <button className=''>Home</button>
         <button>Guia</button>
         <button>Materiais</button>
         <button>Referências</button>
       </div>
 
-      <div className='hidden md:flex font-karla'>
-        <button className='border-2 border-roxo-claro rounded-[10px] w-[170px] h-[30px] text-roxo-claro hover:bg-roxo-claro hover:text-white hover:border-roxo-claro transition-colors duration-300 ease-in-out'>Entre em contato</button>
+      <div className='hidden md:flex'>
+        <button className='
+        lg:w-[170px]
+        md:text-[14px] md:w-[145px] md:h-[30px]
+        font-karla border-2 border-roxo-claro rounded-[15px] text-roxo-claro hover:bg-roxo-claro hover:text-white hover:border-roxo-claro transition-colors duration-300 ease-in-out'>Entre em contato</button>
       </div>
       
       {/* header mobile */}
