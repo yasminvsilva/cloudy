@@ -23,10 +23,6 @@ export default function Materiais() {
             xl:text-[18px]
             font-overpass text-justify text-[16px]">O nosso projeto é composto por várias partes integradas, cada uma desempenhando um papel crucial na funcionalidade geral. Desde o controle do aromatizador até a reprodução de música, iluminação RGB e a exibição do tempo, cada seção apresenta componentes específicos que colaboram para o funcionamento harmonioso do sistema.</p>
           </div>
-            
-          <div>
-
-          </div>
         </div>
     </div>
   )

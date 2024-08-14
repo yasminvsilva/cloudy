@@ -25,7 +25,7 @@ export default function Inicial() {
       
               <div className='
               md:justify-normal
-              flex justify-between gap-3 mb-20'>
+              flex gap-4 mb-20'>
                 <BotaoScroll />
                 <NavegacaoBotao />
               </div>

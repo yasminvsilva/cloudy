@@ -12,7 +12,7 @@ export default function App() {
     <Router>
       <div>
         <main className="
-        2xl:px-[170px]
+        2xl:px-[300px]
         lg:px-[110px] lg:py-[55px]
         md:px-[48px] md:py-[55px]
         px-[32px] py-[50px]">

@@ -17,8 +17,8 @@ const BotaoCarrossel = () => {
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
         setIsAnimating(false);
-      }, 600); // Tempo da animação
-    }, 3000); // Intervalo para mudar o índice
+      }, 600); 
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, []);
