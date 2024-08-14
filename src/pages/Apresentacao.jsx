@@ -11,6 +11,7 @@ export default function Apresentacao() {
       </div>
       <div className="lg:w-1/2 lg:text-right">
         <p className="
+        2xl:mb-[100px]
         xl:text-[18px] xl-w-[500px]
         font-overpass text-[16px] text-justify mb-16">
           Encontramos a solução para transformar suas noites e proporcionar uma qualidade de vida melhor. Com nossa abordagem inovadora, você finalmente encontrará o sono profundo e restaurador que merece.

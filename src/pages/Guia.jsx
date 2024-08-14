@@ -7,8 +7,8 @@ export default function Guia() {
     <div>
         <Header />
         <div>
-            <h1 className="font-karla font-bold text-[25px] text-center mt-16 mb-8 leading-[125%]">Veja como é <span className="text-roxo-titulo">fácil</span> <br></br> <span className="text-roxo-claro">utilizar</span> o Cloudy</h1>
-            <img className="mb-20 m-auto" src={bolinhas} />
+            <h1 className="font-karla font-bold text-[25px] text-center mt-16 mb-12 leading-[125%]">Veja como é <span className="text-roxo-titulo">fácil</span> <br></br> <span className="text-roxo-claro">utilizar</span> o Cloudy</h1>
+            <img className="mb-16 m-auto" src={bolinhas} />
         </div>
 
         <div className="flex">
