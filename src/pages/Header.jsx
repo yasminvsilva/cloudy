@@ -17,8 +17,7 @@ export default function Header() {
     setIsHeaderOpen(!isHeaderOpen)
   }
 
-  // fechar o header clicando fora dele
-  const handleClickOutside = (event) => {
+const clicarFora = (event) => {
     if (headerRef.current && !headerRef.current.contains(event.target)) {
       setIsHeaderOpen(false)
     }
@@ -26,13 +25,13 @@ export default function Header() {
 
   useEffect(() => {
     if (isHeaderOpen) {
-      document.addEventListener('mousedown', handleClickOutside)
+      document.addEventListener('mousedown', clicarFora)
     } else {
-      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('mousedown', clicarFora)
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('mousedown', clicarFora)
     }
   }, [isHeaderOpen])
 
@@ -83,9 +82,9 @@ export default function Header() {
 
       {/* menu mobile */}
       {isHeaderOpen && (
-        <div ref={headerRef} className='font-karla text-[16px] block md:hidden w-[175px] mt-4 ml-[110px] rounded-[10px] flex justify-center absolute top-16 left-0 right-0 bg-branco border-2 border-roxo-claro shadow-lg p-4'>
+        <div ref={headerRef} className='font-karla text-[16px] block md:hidden w-[200px] h-[250px] flex items-center absolute top-0 left-0 right-0 bg-branco border-1 shadow-lg p-4'>
           <nav>
-            <ul className='flex flex-col gap-4'>
+            <ul className='flex flex-col ml-6 gap-6'>
               <li><button onClick={() => navegacao('/')}>Home</button></li>
               <li><button onClick={() => navegacao('/guia')}>Guia</button></li>
               <li><button onClick={() => navegacao('/referencias')}>Referências</button></li>
