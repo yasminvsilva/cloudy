@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom'
 
 function NavegacaoBotao() {
-    const navigate = useNavigate();
+    const navegacao = useNavigate();
   
     const irParaSobreNos = () => {
-      navigate('/sobrenos');
+      navegacao('/sobrenos');
     };
   
     return (

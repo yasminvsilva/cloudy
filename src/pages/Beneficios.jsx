@@ -8,15 +8,18 @@ export default function Beneficios() {
             <h2 className='
             xl:text-[35px] xl:w-2/5 xl:mb-12
             lg:text-[26px] lg:w-1/2 lg:mb-8
-            font-karla font-bold text-[23px] mb-16'>Para nós, a qualidade do seu sono é <span className='text-roxo-titulo'>prioridade</span></h2>
+            md:mb-12
+            font-karla font-bold text-[23px] mb-16'>Para nós, a qualidade do <br></br> seu sono é <span className='text-roxo-titulo'>prioridade</span></h2>
             <p className='
             xl:text-[18px] xl:mb-14 xl:w-2/5
             lg:mb-10 lg:w-1/2
+            md:w-2/5 md:
             font-overpass text-[16px] mb-16 text-justify'>Dormir bem é ser saudável. Conheça alguns dos benefícios que você vai ter ao adquirir o Cloudy:</p>
         </div>
 
         <div className='
-        lg:flex lg:gap-5'>
+        lg:flex lg:gap-5
+        '>
             <div className='xl:w-1/5 lg:w-1/4'>
                 <div className='lg:gap-3 lg:mb-5 flex gap-2 mb-2.5'>
                     <img className='w-5' src={certo} />
@@ -48,10 +51,13 @@ export default function Beneficios() {
                     <p className='xl:text-[18px] lg:leading-5 font-overpass text-[16px]'>Conveniência e facilidade de uso</p>
                 </div>
             </div>
-
-            <div>
-                <img className='mt-10' src={imagensBeneficios} alt="" />
+            
+            <div className='
+            md:w-[260px]
+            '>
+                <img className='md:mt-[0px] mt-14' src={imagensBeneficios} alt="" />
             </div>
+            
         </div>
     </div>
   )

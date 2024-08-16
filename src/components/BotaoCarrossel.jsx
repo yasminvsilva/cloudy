@@ -12,7 +12,7 @@ const BotaoCarrossel = () => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const intervalo = setInterval(() => {
       setIsAnimating(true);
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
@@ -20,7 +20,7 @@ const BotaoCarrossel = () => {
       }, 600); 
     }, 3000); 
 
-    return () => clearInterval(interval);
+    return () => clearInterval(intervalo);
   }, []);
 
   return (
@@ -29,7 +29,7 @@ const BotaoCarrossel = () => {
         <button
           key={index}
           className={`h-[11px] rounded-[10px] transition-all duration-600 ${
-            index === currentIndex ? 'w-11 bg-[#9EBFD1]' : 'w-4 bg-[#CFCFCF]'
+            index === currentIndex ? 'w-11 bg-azul-carrossel' : 'w-4 bg-cinza-carrossel'
           } ${isAnimating && index === currentIndex ? 'animate-pulse' : ''}`}
           onClick={() => {
             setIsAnimating(true);

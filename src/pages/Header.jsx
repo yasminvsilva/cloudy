@@ -17,7 +17,7 @@ export default function Header() {
     setIsHeaderOpen(!isHeaderOpen)
   }
 
-const clicarFora = (event) => {
+  const clicarFora = (event) => {
     if (headerRef.current && !headerRef.current.contains(event.target)) {
       setIsHeaderOpen(false)
     }
@@ -26,12 +26,15 @@ const clicarFora = (event) => {
   useEffect(() => {
     if (isHeaderOpen) {
       document.addEventListener('mousedown', clicarFora)
+      document.body.style.overflow = 'hidden' 
     } else {
       document.removeEventListener('mousedown', clicarFora)
+      document.body.style.overflow = 'auto' 
     }
 
     return () => {
       document.removeEventListener('mousedown', clicarFora)
+      document.body.style.overflow = 'auto' 
     }
   }, [isHeaderOpen])
 
@@ -82,16 +85,26 @@ const clicarFora = (event) => {
 
       {/* menu mobile */}
       {isHeaderOpen && (
-        <div ref={headerRef} className='font-karla text-[16px] block md:hidden w-[200px] h-[250px] flex items-center absolute top-0 left-0 right-0 bg-branco border-1 shadow-lg p-4'>
-          <nav>
-            <ul className='flex flex-col ml-6 gap-6'>
-              <li><button onClick={() => navegacao('/')}>Home</button></li>
-              <li><button onClick={() => navegacao('/guia')}>Guia</button></li>
-              <li><button onClick={() => navegacao('/referencias')}>Referências</button></li>
-              <li><button onClick={() => navegacao('/materiais')}>Materiais</button></li>
-            </ul>
-          </nav>
-        </div>
+        <>
+          <div 
+            className="fixed inset-0 bg-black opacity-55 z-40" 
+            onClick={() => setIsHeaderOpen(false)} 
+          ></div>
+          
+          <div 
+            ref={headerRef} 
+            className="fixed top-20 left-0 w-[200px] h-100 bg-white border border-gray-300 shadow-lg p-4 z-50"
+          >
+            <nav>
+              <ul className="flex flex-col ml-6 gap-6">
+                <li><button onClick={() => navegacao('/')}>Home</button></li>
+                <li><button onClick={() => navegacao('/guia')}>Guia</button></li>
+                <li><button onClick={() => navegacao('/referencias')}>Referências</button></li>
+                <li><button onClick={() => navegacao('/materiais')}>Materiais</button></li>
+              </ul>
+            </nav>
+          </div>
+        </>
       )}
     </div>
   )

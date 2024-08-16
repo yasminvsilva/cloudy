@@ -18,6 +18,7 @@ export default {
         'verde-titulo': '#5EA079',
         'azul-titulo': '#4C8293',
         'azul-carrossel': '#9EBFD1',
+        'cinza-carrossel': '#CFCFCF',
         'secao-diferencial': '#E9EFFF',
         'cinza': '#616161',
         // página de guia

@@ -1,11 +1,11 @@
 import scroll from '../assets/scroll.svg'
 
 const Scroll = () => {
-  const handleScroll = () => {
-    const targetElement = document.getElementById('referencia')
+  const ativarScroll = () => {
+    const pegarElemento = document.getElementById('referencia')
 
-    if (targetElement) {
-      targetElement.scrollIntoView({
+    if (pegarElemento) {
+      pegarElemento.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
@@ -22,7 +22,7 @@ const Scroll = () => {
         className="cursor-pointer transition-transform duration-300 hover:scale-110"
         src={scroll}
         alt="Scroll"
-        onClick={handleScroll}
+        onClick={ativarScroll}
       />
     </div>
   );
