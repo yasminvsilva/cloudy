@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Header from './Header'
 
 export default function SobreNos() {
@@ -11,27 +12,66 @@ export default function SobreNos() {
         lg:pt-[50px] lg:px-[80px]
         md:px-[40px] md:pt-[20px]
         '>
-          <div>   
-              <h1 className='
-              2xl:mt-20
-              xl:text-[36px]
-              lg:text-[32px] lg:mb-24
-              font-karla font-bold text-[26px] mt-16 mb-16 text-center leading-[125%]'>A <span className='text-roxo-titulo'>credibilidade</span> é a <br></br> chave para a <span className=''>confiança</span></h1>
-              <p className='
-              xl:text-[18px]
-              font-overpass text-[16px] text-justify mb-6'>A ciência comprova que o sono é de extrema importância para promover a saúde e o bem-estar. Um sono de má qualidade pode propiciar má disposição, um desempenho ruim em atividades, estresse e ocasionar distúrbios do sono, como a insônia.</p>
-              <p className='
-              xl:text-[18px]
-              font-overpass text-[16px] text-justify mb-6'>Apesar de os mitos populares relatarem que a aromaterapia é uma medida ineficaz, pesquisas indicam que a utilização terapêutica dos óleos essenciais surge como uma estratégia promissora na melhoria da qualidade do sono.</p>
-              <p className='
-              xl:text-[18px]
-              font-overpass text-[16px] text-justify mb-6'>Estudos aprofundam ainda mais essa questão, revelando que o óleo essencial de lavanda demonstra efeitos relaxantes e sedativos, atuando no sistema nervoso central para reduzir sintomas de ansiedade e insônia.</p>
-              <p className='
-              xl:text-[18px]
-              font-overpass text-[16px] text-justify mb-20'>Portanto, não há como negar que a aromaterapia é uma opção valiosa para aqueles que buscam aprimorar seu sono de maneira natural, pois, além de melhorar a qualidade do sono, melhora a qualidade de vida.</p>
-          </div>
 
-          <div className='flex flex-col items-center justify-center px-[16px]'>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+          >
+            <h1 className='
+            2xl:mt-20
+            xl:text-[36px]
+            lg:text-[32px] lg:mb-24
+            font-karla font-bold text-[26px] mt-16 mb-16 text-center leading-[125%]'>A <span className='text-roxo-titulo'>credibilidade</span> é a <br></br> chave para a <span className=''>confiança</span></h1>
+
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+          >
+            <p className='
+              xl:text-[18px]
+              font-overpass text-[16px] text-justify mb-6'>A ciência comprova que o sono é de extrema importância para promover a <span className='font-bold text-azul-titulo'>saúde</span> e o <span className='font-bold text-azul-titulo'>bem-estar</span>. Um sono de má qualidade pode propiciar má disposição, um desempenho ruim em atividades, estresse e ocasionar distúrbios do sono, como a <span className='font-bold text-azul-titulo'>insônia</span>.</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+          >
+            <p className='
+            xl:text-[18px]
+            font-overpass text-[16px] text-justify mb-6'>Apesar de os mitos populares relatarem que a aromaterapia é uma medida ineficaz, pesquisas indicam que a utilização terapêutica dos óleos essenciais surge como uma estratégia promissora na melhoria da qualidade do sono.</p>
+          </motion.div>
+              
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+          >
+            <p className='
+            xl:text-[18px]
+            font-overpass text-[16px] text-justify mb-6'>Estudos aprofundam ainda mais essa questão, revelando que o óleo essencial de lavanda demonstra efeitos relaxantes e sedativos, atuando no sistema nervoso central para reduzir sintomas de ansiedade e insônia.</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
+          >
+            <p className='
+            xl:text-[18px]
+            font-overpass text-[16px] text-justify mb-16'>Portanto, não há como negar que a aromaterapia é uma opção valiosa para aqueles que buscam aprimorar seu sono de maneira natural, pois, além de melhorar a qualidade do sono, melhora a qualidade de vida.</p>
+          </motion.div>
+              
+          <div className=''>
+            <motion.div className='flex flex-col items-center justify-center px-[16px]'
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
+            >
               <h2 className='
               2xl:text-[21px] 2xl:mt-8
               xl:text-[20px]
@@ -41,19 +81,23 @@ export default function SobreNos() {
               xl:text-[14px]
               lg:text-[13px]
               font-overpass text-cinza mb-10 text-[12px]'>Clique para ser direcionado</p>
+            </motion.div>
           </div>
 
-          <div className='
-          2xl:gap-20
-          xl:text-[16px] xl:gap-12
-          lg:flex lg:flex-row lg:gap-10 lg:mt-6
-          text-roxo-titulo text-[14px] font-medium text-justify flex flex-col justify-center px-[20px] leading-[113%]'>
-              <a className='hover:cursor-pointer mb-6 text-center' href="https://recima21.com.br/index.php/recima21/article/view/2415" target="_blank">Influência dos ruídos brancos na qualidade do sono</a>
-              <a className='hover:cursor-pointer mb-6 text-center' href="http://www.mastereditora.com.br/periodico/20140702_165353.pdf" target="_blank">Transtornos do ciclo sono vigília/circadiano</a>
-              <a className='hover:cursor-pointer text-center' href="https://bjihs.emnuvens.com.br/bjihs/article/view/1462" target="_blank">Influência dos óleos essenciais na melhoria do sono</a>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.7 }}
+            className='
+            2xl:gap-20
+            xl:text-[16px] xl:gap-12
+            lg:flex lg:flex-row lg:gap-10 lg:mt-6
+            text-roxo-titulo text-[14px] font-medium text-justify flex flex-col justify-center px-[20px] leading-[113%]'>
+                <a className='hover:cursor-pointer mb-8 text-center' href="https://recima21.com.br/index.php/recima21/article/view/2415" target="_blank">Influência dos ruídos brancos na qualidade do sono</a>
+                <a className='hover:cursor-pointer mb-8 text-center' href="http://www.mastereditora.com.br/periodico/20140702_165353.pdf" target="_blank">Transtornos do ciclo sono vigília/circadiano</a>
+                <a className='hover:cursor-pointer text-center' href="https://bjihs.emnuvens.com.br/bjihs/article/view/1462" target="_blank">Influência dos óleos essenciais na melhoria do sono</a>
+          </motion.div>
         </div>
-        
     </div>
   )
 }

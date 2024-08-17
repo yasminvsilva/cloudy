@@ -31,7 +31,6 @@ export default function Inicial() {
               </div>
             </div>
             
-
             <div className='
             lg:w-5/12
             flex justify-center w-auto h-auto'>

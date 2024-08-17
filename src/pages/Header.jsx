@@ -60,7 +60,7 @@ export default function Header() {
       <div className='hidden md:flex'>
         <button className='
         lg:w-[170px]
-        md:text-[14px] md:w-[145px] md:h-[30px]
+        md:text-[14px] md:w-[145px] md:h-[32px]
         font-karla border-2 border-roxo-claro rounded-[15px] text-roxo-claro hover:bg-roxo-claro hover:text-white hover:border-roxo-claro transition-colors duration-300 ease-in-out'>
           Entre em contato
         </button>
