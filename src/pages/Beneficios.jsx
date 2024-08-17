@@ -12,7 +12,7 @@ export default function Beneficios() {
             xl:text-[35px] xl:w-4/5 xl:mb-16
             lg:text-[26px] lg:w-3/4 lg:mb-8
             md:w-3/4 md:mb-8
-            font-karla font-bold text-[23px] mb-16'>Para nós, a qualidade do seu sono é <span className='text-roxo-titulo'>prioridade</span></h2>
+            font-karla font-bold text-[23px] mb-16'>Para nós, a qualidade do <br></br> seu sono é <span className='text-roxo-titulo'>prioridade</span></h2>
             <p className='
             2xl:w-3/5 2xl:mb-18
             xl:text-[18px] xl:mb-16 xl:w-4/5
