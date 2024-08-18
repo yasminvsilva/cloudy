@@ -1,5 +1,7 @@
 import Carrossel from '../components/Carrossel'
 import BotaoCarrossel from '../components/BotaoCarrossel'
+import Cards from '../components/Cards'
+
 export default function Diferencial() {
   return (
     <div>
@@ -14,11 +16,19 @@ export default function Diferencial() {
             font-overpass text-[16px] text-justify mb-16'>O nosso produto te oferece diversas funcionalidades que se destacam, tudo para garantir a sua qualidade de sono.</p>
         </div>
 
-        <div className='relative bg-secao-diferencial w-56 h-48 px-6 py-6 rounded-3xl flex flex-col items-center justify-center mb-7 mx-auto'>
+        <div className='md:hidden lg:block'>
+         <Cards /> 
+        </div>
+
+        <div className='
+        lg:hidden
+        relative bg-secao-diferencial w-56 h-48 px-6 py-6 rounded-3xl flex flex-col items-center justify-center mb-7 mx-auto'>
             <Carrossel />
         </div>
 
-        <div className='mb-20'>
+        <div className='
+        lg:hidden
+        mb-20'>
           <BotaoCarrossel />
         </div>
     </div>

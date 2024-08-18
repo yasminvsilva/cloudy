@@ -6,7 +6,8 @@ export default function Beneficios() {
     <div className='
     md:flex
     '>
-        <div>
+        <div className='
+        '>
             <h2 className='
             2xl:w-3/5 2xl:mb-18
             xl:text-[35px] xl:w-4/5 xl:mb-16

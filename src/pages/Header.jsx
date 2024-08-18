@@ -1,42 +1,42 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-import logo from '../assets/logo.svg'
-import iconeHeader from '../assets/icone-header-mobile.svg'
-import iconeContato from '../assets/icone-contato-mobile.svg'
-import iconeContatoHover from '../assets/icone-contato-hover-mobile.svg'
+import logo from '../assets/logo.svg';
+import iconeHeader from '../assets/icone-header-mobile.svg';
+import iconeContato from '../assets/icone-contato-mobile.svg';
+import iconeContatoHover from '../assets/icone-contato-hover-mobile.svg';
 
-// mobile
 export default function Header() {
-  const [isHovered, setIsHovered] = useState(false)
-  const [isHeaderOpen, setIsHeaderOpen] = useState(false)
-  const navegacao = useNavigate()
-  const headerRef = useRef(null)
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHeaderOpen, setIsHeaderOpen] = useState(false);
+  const navegacao = useNavigate();
+  const location = useLocation();
+  const headerRef = useRef(null);
 
   const toggleHeader = () => {
-    setIsHeaderOpen(!isHeaderOpen)
-  }
+    setIsHeaderOpen(!isHeaderOpen);
+  };
 
   const clicarFora = (event) => {
     if (headerRef.current && !headerRef.current.contains(event.target)) {
-      setIsHeaderOpen(false)
+      setIsHeaderOpen(false);
     }
-  }
+  };
 
   useEffect(() => {
     if (isHeaderOpen) {
-      document.addEventListener('mousedown', clicarFora)
-      document.body.style.overflow = 'hidden' 
+      document.addEventListener('mousedown', clicarFora);
+      document.body.style.overflow = 'hidden';
     } else {
-      document.removeEventListener('mousedown', clicarFora)
-      document.body.style.overflow = 'auto' 
+      document.removeEventListener('mousedown', clicarFora);
+      document.body.style.overflow = 'auto';
     }
 
     return () => {
-      document.removeEventListener('mousedown', clicarFora)
-      document.body.style.overflow = 'auto' 
-    }
-  }, [isHeaderOpen])
+      document.removeEventListener('mousedown', clicarFora);
+      document.body.style.overflow = 'auto';
+    };
+  }, [isHeaderOpen]);
 
   return (
     <div className='flex justify-between'>
@@ -47,14 +47,35 @@ export default function Header() {
       </div>
 
       {/* header desktop */}
-      <div className=' 
+      <div className='
       lg:flex lg:gap-10
       md:flex md:text-[14px] md:gap-5 justify-center
-      gap-8 font-karla hidden'>
-        <button onClick={() => navegacao('/')}>Home</button>
-        <button onClick={() => navegacao('/guia')}>Guia</button>
-        <button onClick={() => navegacao('/materiais')}>Materiais</button>
-        <button onClick={() => navegacao('/referencias')}>Referências</button>
+      gap-8 font-karla hidden bg-branco'>
+        <button
+        onClick={() => navegacao('/')}
+        className={`${location.pathname === '/' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}
+      >
+        Home
+      </button>
+      <button
+        onClick={() => navegacao('/guia')}
+        className={`${location.pathname === '/guia' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}
+      >
+        Guia
+      </button>
+      <button
+        onClick={() => navegacao('/materiais')}
+        className={`${location.pathname === '/materiais' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}
+      >
+        Materiais
+      </button>
+      <button
+        onClick={() => navegacao('/referencias')}
+        className={`${location.pathname === '/referencias' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}
+      >
+        Referências
+      </button>
+
       </div>
 
       <div className='hidden md:flex'>
@@ -107,5 +128,5 @@ export default function Header() {
         </>
       )}
     </div>
-  )
+  );
 }
