@@ -50,7 +50,7 @@ export default function SobreNos() {
               <p className='
               xl:text-[18px]
               font-overpass text-[16px] text-justify mb-6'>
-                Nosso projeto surgiu da compreensão das dificuldades enfrentadas pelas pessoas em relação aos distúrbios de sono. Nosso objetivo é criar soluções que melhorem a qualidade de vida por meio de tecnologias acessíveis e eficazes.
+                Nosso projeto surgiu da compreensão das dificuldades enfrentadas pelas pessoas em relação aos <span className='font-bold text-azul-titulo'>distúrbios de sono</span>. Nosso objetivo é criar soluções que melhorem a <span className='font-bold text-azul-titulo'>qualidade de vida</span> por meio de tecnologias acessíveis e eficazes.
               </p>
             </motion.div>
 
@@ -62,7 +62,7 @@ export default function SobreNos() {
               <p className='
               xl:text-[18px]
               font-overpass text-[16px] text-justify mb-12'>
-                Vimos na aromaterapia uma oportunidade de desenvolver um dispositivo que, não apenas ajudasse a combater os distúrbios do sono, mas também oferecesse um ambiente relaxante por meio da música e iluminação âmbar.
+                Vimos na <span className='font-bold text-azul-titulo'>aromaterapia</span> uma oportunidade de desenvolver um dispositivo que, não apenas ajudasse a combater os distúrbios do sono, mas também oferecesse um ambiente relaxante por meio da <span className='font-bold text-azul-titulo'>música</span> e <span className='font-bold text-azul-titulo'>iluminação âmbar</span>.
               </p>
             </motion.div>
           </div>

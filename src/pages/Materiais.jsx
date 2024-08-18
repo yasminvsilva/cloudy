@@ -30,7 +30,7 @@ export default function Materiais() {
           >
             <p className="
             xl:text-[18px]
-            font-overpass text-justify mb-6 text-[16px]">Aqui você encontrará uma visão completa e detalhada dos componentes que utilizamos para dar vida ao Cloudy. O nosso projeto é composto por várias partes integradas, cada uma desempenhando um papel crucial na funcionalidade geral.</p>
+            font-overpass text-justify mb-6 text-[16px]">Aqui você encontrará uma visão completa e detalhada dos componentes que utilizamos para dar vida ao <span className='font-bold text-azul-titulo'>Cloudy</span>. O nosso projeto é composto por várias partes integradas, cada uma desempenhando um papel crucial na funcionalidade geral.</p>
           </motion.div>
             
           <motion.div
@@ -40,7 +40,7 @@ export default function Materiais() {
           >
             <p className="
             xl:text-[18px]
-            font-overpass text-justify text-[16px]"> Desde o controle do aromatizador até a reprodução de música, iluminação RGB e a exibição do tempo, cada seção apresenta componentes específicos que colaboram para o funcionamento harmonioso do sistema.</p>
+            font-overpass text-justify text-[16px]"> Desde o controle do <span className='font-bold text-azul-titulo'>aromatizador</span> até a reprodução de <span className='font-bold text-azul-titulo'>música</span>, iluminação <span className='font-bold text-azul-titulo'>RGB</span> e a exibição do <span className='font-bold text-azul-titulo'>tempo</span>, cada seção apresenta componentes específicos que colaboram para o funcionamento harmonioso do sistema.</p>
           </motion.div>
         </div>
     </div>

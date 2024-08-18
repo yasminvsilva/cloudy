@@ -43,7 +43,7 @@ export default function SobreNos() {
           >
             <p className='
             xl:text-[18px]
-            font-overpass text-[16px] text-justify mb-6'>Apesar de os mitos populares relatarem que a aromaterapia é uma medida ineficaz, pesquisas indicam que a utilização terapêutica dos óleos essenciais surge como uma estratégia promissora na melhoria da qualidade do sono.</p>
+            font-overpass text-[16px] text-justify mb-6'>Apesar de os mitos populares relatarem que a <span className='font-bold text-azul-titulo'>aromaterapia</span> é uma medida ineficaz, pesquisas indicam que a utilização terapêutica dos óleos essenciais surge como uma estratégia promissora na <span className='font-bold text-azul-titulo'>melhoria da qualidade do sono</span>.</p>
           </motion.div>
               
           <motion.div
@@ -53,7 +53,7 @@ export default function SobreNos() {
           >
             <p className='
             xl:text-[18px]
-            font-overpass text-[16px] text-justify mb-6'>Estudos aprofundam ainda mais essa questão, revelando que o óleo essencial de lavanda demonstra efeitos relaxantes e sedativos, atuando no sistema nervoso central para reduzir sintomas de ansiedade e insônia.</p>
+            font-overpass text-[16px] text-justify mb-6'>Estudos aprofundam ainda mais essa questão, revelando que o <span className='font-bold text-azul-titulo'>óleo essencial de lavanda</span> demonstra efeitos relaxantes e sedativos, atuando no sistema nervoso central para reduzir sintomas de <span className='font-bold text-azul-titulo'>ansiedade e insônia</span>.</p>
           </motion.div>
 
           <motion.div
@@ -63,7 +63,7 @@ export default function SobreNos() {
           >
             <p className='
             xl:text-[18px]
-            font-overpass text-[16px] text-justify mb-16'>Portanto, não há como negar que a aromaterapia é uma opção valiosa para aqueles que buscam aprimorar seu sono de maneira natural, pois, além de melhorar a qualidade do sono, melhora a qualidade de vida.</p>
+            font-overpass text-[16px] text-justify mb-16'>Portanto, não há como negar que a aromaterapia é uma opção <span className='font-bold text-azul-titulo'>valiosa</span> para aqueles que buscam aprimorar seu sono de maneira <span className='font-bold text-azul-titulo'>natural</span>, pois, além de melhorar a qualidade do sono, melhora a qualidade de vida.</p>
           </motion.div>
               
           <div className=''>

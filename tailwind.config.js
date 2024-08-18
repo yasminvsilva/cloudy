@@ -24,8 +24,9 @@ export default {
         // página de guia
         'roxo-guia': '#DCD2F3',
         'verde-guia': '#E5FFDC',
-        'azul-guia': '#D1DEFF',
+        'azul-guia': '#F9FAFF',
         'linha': '#B1B1B1',
+        'guia': '#FAFFF9'
         // página de materiais
       },
     },
