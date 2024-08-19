@@ -128,7 +128,7 @@ export default function Header() {
                 exit={{ x: '-100%' }}
                 transition={{ duration: 0.15 }}
               >
-                <div className='flex justify-between items-center h-12 mb-6 mr-2'>
+                <div className='flex justify-between items-center h-16 mb-12 mr-2'>
                   <img className='w-[70px] ml-4 mt-1' src={logo} alt="" />
                   <img className='w-[25px] cursor-pointer' src={x} alt="" onClick={() => setIsHeaderOpen(false)} />
                 </div>
