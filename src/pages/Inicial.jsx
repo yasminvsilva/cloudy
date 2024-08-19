@@ -19,8 +19,8 @@ export default function Inicial() {
               2xl:text-[55px]
               xl:text-[50px]
               lg:text-[40px] lg:mt-24
-              md:mt-20
-              font-karla font-bold text-[29px] mt-16 mb-10 leading-[113%]'><span className='text-roxo-titulo'>Recupere</span> suas noites, <br></br> <span className='text-roxo-titulo'>renove</span> suas energias</motion.h1>
+              md:mt-20 md:text-[29px]
+              font-karla font-bold text-[8vw] mt-16 mb-10 leading-[113%]'><span className='text-roxo-titulo'>Recupere</span> suas noites, <br></br> <span className='text-roxo-titulo'>renove</span> suas energias</motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -43,6 +43,7 @@ export default function Inicial() {
             
             <div className='
             lg:w-5/12
+            md:w-[330px]
             flex justify-center w-auto h-auto'>
               <motion.img
                 initial={{ opacity: 0, y: 10 }}
