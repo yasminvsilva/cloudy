@@ -24,7 +24,7 @@ export default function Guia() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.1 }} 
             className="
-            xl:text-[36px] xl:mb-24
+            xl:text-[36px] xl:mb-20
             lg:text-[32px] lg:mb-20
             font-karla font-bold text-[26px] mt-16 mb-16 text-center leading-[125%]">Veja como é <span className="text-roxo-titulo">fácil</span> <br></br> utilizar o Cloudy
             </motion.h1>
@@ -34,7 +34,7 @@ export default function Guia() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.2 }}
             className="
-            xl:w-[12px] xl:mb-24
+            xl:w-[12px] xl:mb-20
             lg:w-[10px] lg:mb-20
             mb-16 m-auto w-[8px]" src={bolinhas} />
         </div>

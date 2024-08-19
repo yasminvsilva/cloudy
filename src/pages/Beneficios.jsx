@@ -16,7 +16,7 @@ export default function Beneficios() {
             font-karla font-bold text-[23px] mb-16'>Para nós, a qualidade do <br></br> seu sono é <span className='text-roxo-titulo'>prioridade</span></h2>
             <p className='
             2xl:w-3/5 2xl:mb-18
-            xl:text-[18px] xl:mb-16 xl:w-4/5
+            xl:text-[18px] xl:mb-16 xl:w-3/5
             lg:mb-10 lg:w-3/4
             md:w-3/4 md:mb-8
             font-overpass text-[16px] mb-16 text-justify'>Dormir bem é ser saudável. Conheça alguns dos benefícios que você vai ter ao adquirir o Cloudy:</p>
@@ -24,7 +24,7 @@ export default function Beneficios() {
             <div className='
             lg:flex lg:gap-6 2xl:gap-10
             '>
-                <div className='2xl:w-1/4 xl:w-2/5 lg:w-2/5'>
+                <div className='2xl:w-1/4 xl:w-1/3 lg:w-2/5'>
                     <div className='lg:gap-3 lg:mb-5 flex gap-2 mb-2.5'>
                         <img className='w-5' src={certo} />
                         <p className='xl:text-[18px] lg:leading-5 font-overpass text-[16px]'>Redução da insônia</p>
