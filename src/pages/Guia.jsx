@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom'
+
 import Header from "./Header"
 import bolinhas from "../assets/bolinhasGuia.svg"
 import confsImg from "../assets/confsIniciais.svg"

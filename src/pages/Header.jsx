@@ -48,7 +48,6 @@ export default function Header() {
         <img src={logo} alt="Logo" />
       </div>
 
-      {/* header desktop */}
       <div className='
       lg:flex lg:gap-10
       md:flex md:text-[14px] md:gap-5 justify-center
@@ -91,7 +90,6 @@ export default function Header() {
         </a>
       </div>
       
-      {/* header mobile */}
       <div className='block md:hidden flex justify-between gap-1'>
         <img 
           className='hover:cursor-pointer' 
@@ -111,7 +109,6 @@ export default function Header() {
         
       </div>
 
-      {/* menu mobile */}
       <AnimatePresence>
         {isHeaderOpen && (
           

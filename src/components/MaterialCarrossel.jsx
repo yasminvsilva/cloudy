@@ -39,7 +39,7 @@ const MaterialCarrossel = () => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const intervalo = setInterval(() => {
       setIsAnimating(true);
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
@@ -47,7 +47,7 @@ const MaterialCarrossel = () => {
       }, 600);
     }, 4000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(intervalo);
   }, []);
 
   return (

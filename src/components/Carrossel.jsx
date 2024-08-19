@@ -33,14 +33,14 @@ const Carrossel = () => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const intervalo = setInterval(() => {
       setIsAnimating(true);
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
         setIsAnimating(false);}, 600);
     }, 3000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(intervalo);
   }, []);
 
   return (
