@@ -244,16 +244,16 @@ export default function Guia() {
                 font-overpass text-[16px] text-justify mb-12">Agora é só desfrutar dos benefícios do Cloudy! Transforme sua rotina de sono e desfrute de uma noite verdadeiramente rejuvenescedora.</p>
                 
                 <div className="flex justify-center">
-            <button 
-                className="text-roxo-claro border-roxo-claro border-2 rounded-2xl w-[120px] h-[42px] font-overpass text-[16px] text-center mb-12 hover:bg-roxo-claro hover:text-white hover:border-roxo-claro transition-colors duration-300 ease-in-out" 
-                onClick={() => {
-                    navegacao('/guia');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-            >
-        Voltar
-    </button>
-</div>
+                    <button 
+                        className="text-azul-carrossel border-azul-carrossel border-2 rounded-2xl w-[120px] h-[42px] font-overpass text-[16px] text-center mb-12 hover:bg-azul-titulo hover:text-white hover:border-azul-titulo transition-colors duration-300 ease-in-out" 
+                        onClick={() => {
+                            navegacao('/guia');
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }}
+                    >
+                        Voltar
+                    </button>
+                </div>
 
             </div>
 
