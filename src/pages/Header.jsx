@@ -81,12 +81,14 @@ export default function Header() {
       </div>
 
       <div className='hidden md:flex'>
-        <button className='
-        lg:w-[170px]
-        md:text-[14px] md:w-[145px] md:h-[32px]
-        font-karla border-2 border-roxo-claro rounded-[15px] text-roxo-claro hover:bg-roxo-claro hover:text-white hover:border-roxo-claro transition-colors duration-300 ease-in-out'>
-          Entre em contato
-        </button>
+        <a href="mailto:contate.allways@gmail.com">
+          <button className='
+          lg:w-[170px]
+          md:text-[14px] md:w-[145px] md:h-[32px]
+          font-karla border-2 border-roxo-claro rounded-[15px] text-roxo-claro hover:bg-roxo-claro hover:text-white hover:border-roxo-claro transition-colors duration-300 ease-in-out'>
+            Entre em contato
+          </button>
+        </a>
       </div>
       
       {/* header mobile */}
@@ -97,13 +99,16 @@ export default function Header() {
           alt="" 
           onClick={toggleHeader} 
         />
-        <img
+        <a href="mailto:contate.allways@gmail.com">
+          <img
           className="hover:cursor-pointer transition-transform duration-300 ease-in-out"
           src={isHovered ? iconeContatoHover : iconeContato}
           alt="Ícone de Contato"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-        />
+          />
+        </a>
+        
       </div>
 
       {/* menu mobile */}
@@ -134,10 +139,14 @@ export default function Header() {
                 </div>
                 <nav>
                   <ul className="mb-6 flex flex-col ml-4 gap-6">
-                    <li><button onClick={() => navegacao('/')}>Home</button></li>
-                    <li><button onClick={() => navegacao('/guia')}>Guia</button></li>
-                    <li><button onClick={() => navegacao('/referencias')}>Referências</button></li>
-                    <li><button onClick={() => navegacao('/materiais')}>Materiais</button></li>
+                    <li><button onClick={() => navegacao('/')} 
+                    className={`${location.pathname === '/' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}>Home</button></li>
+                    <li><button onClick={() => navegacao('/guia')} 
+                    className={`${location.pathname === '/guia' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}>Guia</button></li>
+                    <li><button onClick={() => navegacao('/referencias')} 
+                    className={`${location.pathname === '/referencias' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}>Referências</button></li>
+                    <li><button onClick={() => navegacao('/materiais')} 
+                    className={`${location.pathname === '/materiais' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}>Materiais</button></li>
                   </ul>
                 </nav>
               </motion.div>
