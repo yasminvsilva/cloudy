@@ -45,7 +45,7 @@ export default function Materiais() {
           </motion.div>
         </div>
 
-        <div className='relative border-2 border-verde-titulo w-[270px] h-[250px] px-8 py-8 rounded-br-3xl flex flex-col items-center justify-center mb-4 mx-auto'>
+        <div className='relative border-2 border-roxo-claro w-[270px] h-[250px] px-8 py-8 rounded-3xl flex flex-col items-center justify-center mb-4 mx-auto'>
           <MaterialCarrossel />
         </div>
     </div>

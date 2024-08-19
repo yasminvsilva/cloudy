@@ -14,7 +14,7 @@ const Scroll = () => {
 
   return (
     <div className="~
-    2xl:mt-[32px] 2xl:mb-[150px]
+    2xl:mt-[28px] 2xl:mb-[110px]
     lg:mt-[40px]
     md:mt-[16px]
     mt-[60px] mb-[94px] flex items-center justify-center">
