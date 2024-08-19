@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import logo from '../assets/logo.svg';
 import iconeHeader from '../assets/icone-header-mobile.svg';
 import iconeContato from '../assets/icone-contato-mobile.svg';
 import iconeContatoHover from '../assets/icone-contato-hover-mobile.svg';
+import x from '../assets/x.svg'
 
 export default function Header() {
   const [isHovered, setIsHovered] = useState(false);
@@ -105,28 +107,43 @@ export default function Header() {
       </div>
 
       {/* menu mobile */}
-      {isHeaderOpen && (
-        <>
-          <div 
-            className="fixed inset-0 bg-black opacity-55 z-40" 
-            onClick={() => setIsHeaderOpen(false)} 
-          ></div>
+      <AnimatePresence>
+        {isHeaderOpen && (
           
-          <div 
-            ref={headerRef} 
-            className="fixed top-20 left-0 w-[200px] h-100 bg-white border border-gray-300 shadow-lg p-4 z-50"
-          >
-            <nav>
-              <ul className="flex flex-col ml-6 gap-6">
-                <li><button onClick={() => navegacao('/')}>Home</button></li>
-                <li><button onClick={() => navegacao('/guia')}>Guia</button></li>
-                <li><button onClick={() => navegacao('/referencias')}>Referências</button></li>
-                <li><button onClick={() => navegacao('/materiais')}>Materiais</button></li>
-              </ul>
-            </nav>
-          </div>
-        </>
-      )}
+            <>
+              <motion.div
+                className="fixed inset-0 bg-black opacity-55 z-40" 
+                onClick={() => setIsHeaderOpen(false)} 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.55 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.15 }}
+              ></motion.div>
+              
+              <motion.div 
+                ref={headerRef} 
+                className="fixed top-0 left-0 w-[200px] bg-white border border-gray-300 shadow-lg p-4 z-50"
+                initial={{ x: '-100%' }}
+                animate={{ x: 0 }}
+                exit={{ x: '-100%' }}
+                transition={{ duration: 0.15 }}
+              >
+                <div className='flex justify-between items-center h-12 mb-6 mr-2'>
+                  <img className='w-[70px] ml-4 mt-1' src={logo} alt="" />
+                  <img className='w-[25px] cursor-pointer' src={x} alt="" onClick={() => setIsHeaderOpen(false)} />
+                </div>
+                <nav>
+                  <ul className="mb-6 flex flex-col ml-4 gap-6">
+                    <li><button onClick={() => navegacao('/')}>Home</button></li>
+                    <li><button onClick={() => navegacao('/guia')}>Guia</button></li>
+                    <li><button onClick={() => navegacao('/referencias')}>Referências</button></li>
+                    <li><button onClick={() => navegacao('/materiais')}>Materiais</button></li>
+                  </ul>
+                </nav>
+              </motion.div>
+            </>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
