@@ -127,7 +127,7 @@ export default function Header() {
               
               <motion.div 
                 ref={headerRef} 
-                className="fixed top-0 left-0 w-[200px] bg-white border border-gray-300 shadow-lg p-4 z-50"
+                className="fixed top-0 left-0 w-[200px] h-full bg-white border border-gray-300 shadow-lg p-4 z-50"
                 initial={{ x: '-100%' }}
                 animate={{ x: 0 }}
                 exit={{ x: '-100%' }}
@@ -140,13 +140,13 @@ export default function Header() {
                 <nav>
                   <ul className="mb-6 flex flex-col ml-4 gap-6">
                     <li><button onClick={() => navegacao('/')} 
-                    className={`${location.pathname === '/' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}>Home</button></li>
+                    className={`${location.pathname === '/' ? 'text-roxo-claro font-karla' : 'hover:text-roxo-claro font-karla'}`}>Home</button></li>
                     <li><button onClick={() => navegacao('/guia')} 
-                    className={`${location.pathname === '/guia' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}>Guia</button></li>
+                    className={`${location.pathname === '/guia' ? 'text-roxo-claro font-karla' : 'hover:text-roxo-claro font-karla'}`}>Guia</button></li>
                     <li><button onClick={() => navegacao('/referencias')} 
-                    className={`${location.pathname === '/referencias' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}>Referências</button></li>
+                    className={`${location.pathname === '/referencias' ? 'text-roxo-claro font-karla' : 'hover:text-roxo-claro font-karla'}`}>Referências</button></li>
                     <li><button onClick={() => navegacao('/materiais')} 
-                    className={`${location.pathname === '/materiais' ? 'text-roxo-claro' : 'hover:text-roxo-claro'}`}>Materiais</button></li>
+                    className={`${location.pathname === '/materiais' ? 'text-roxo-claro font-karla' : 'hover:text-roxo-claro font-karla'}`}>Materiais</button></li>
                   </ul>
                 </nav>
               </motion.div>
