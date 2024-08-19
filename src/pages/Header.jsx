@@ -127,16 +127,18 @@ export default function Header() {
               
               <motion.div 
                 ref={headerRef} 
-                className="fixed top-0 left-0 w-[200px] h-full bg-white border border-gray-300 shadow-lg p-4 z-50"
+                className="fixed top-0 left-0 w-[250px] h-full bg-white border border-gray-300 shadow-lg p-4 z-50"
                 initial={{ x: '-100%' }}
                 animate={{ x: 0 }}
                 exit={{ x: '-100%' }}
                 transition={{ duration: 0.15 }}
               >
-                <div className='flex justify-between items-center h-16 mb-12 mr-2'>
+                <div className='flex justify-between items-center h-16 mb-6 mr-2'>
                   <img className='w-[70px] ml-4 mt-1' src={logo} alt="" />
                   <img className='w-[25px] cursor-pointer' src={x} alt="" onClick={() => setIsHeaderOpen(false)} />
                 </div>
+
+                <hr className='border-1 mb-6 ml-4 mr-2' />
                 <nav>
                   <ul className="mb-6 flex flex-col ml-4 gap-6">
                     <li><button onClick={() => navegacao('/')} 
