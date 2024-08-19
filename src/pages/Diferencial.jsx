@@ -15,7 +15,7 @@ export default function Diferencial() {
             lg:w-2/3
             font-overpass text-[16px] text-justify mb-16'>O nosso produto te oferece diversas funcionalidades que se destacam, tudo para garantir a sua qualidade de sono.</p>
         </div>
-
+    
         <div className='md:hidden lg:block'>
          <Cards /> 
         </div>

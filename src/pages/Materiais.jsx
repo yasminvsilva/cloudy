@@ -45,9 +45,13 @@ export default function Materiais() {
           </motion.div>
         </div>
 
-        <div className='relative border-2 border-roxo-claro w-[270px] h-[250px] px-8 py-8 rounded-3xl flex flex-col items-center justify-center mb-4 mx-auto'>
+        <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.4 }} 
+            className='relative border-2 border-roxo-claro w-[270px] h-[250px] px-8 py-8 rounded-3xl flex flex-col items-center justify-center mb-4 mx-auto'>
           <MaterialCarrossel />
-        </div>
+        </motion.div>
     </div>
   )
 }
