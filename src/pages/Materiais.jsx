@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Header from "./Header"
+import MaterialCarrossel from '../components/MaterialCarrossel'
 
 export default function Materiais() {
   return (
@@ -40,8 +41,12 @@ export default function Materiais() {
           >
             <p className="
             xl:text-[18px]
-            font-overpass text-justify text-[16px] mb-28"> Desde o controle do <span className='font-bold text-azul-titulo'>aromatizador</span> até a reprodução de <span className='font-bold text-azul-titulo'>música</span>, iluminação <span className='font-bold text-azul-titulo'>RGB</span> e a exibição do <span className='font-bold text-azul-titulo'>tempo</span>, cada seção apresenta componentes específicos que colaboram para o funcionamento harmonioso do sistema.</p>
+            font-overpass text-justify text-[16px] mb-20"> Desde o controle do <span className='font-bold text-azul-titulo'>aromatizador</span> até a reprodução de <span className='font-bold text-azul-titulo'>música</span>, iluminação <span className='font-bold text-azul-titulo'>RGB</span> e a exibição do <span className='font-bold text-azul-titulo'>tempo</span>, cada seção apresenta componentes específicos que colaboram para o funcionamento harmonioso do sistema.</p>
           </motion.div>
+        </div>
+
+        <div className='relative border-2 border-verde-titulo w-[270px] h-[250px] px-8 py-8 rounded-br-3xl flex flex-col items-center justify-center mb-4 mx-auto'>
+          <MaterialCarrossel />
         </div>
     </div>
   )
