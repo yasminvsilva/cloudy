@@ -29,7 +29,7 @@ const slides = [
   { imagem: moduloTP4056, titulo: 'Módulo TP4056', descricao: 'Carregador de baterias de lítio, com proteção contra sobrecarga.' },
   { imagem: resistor, titulo: 'Resistor', descricao: 'Componente que limita a corrente em um circuito.' },
   { imagem: umidificadora, titulo: 'Umidificadora', descricao: 'Dispositivo utilizado para aumentar a umidade do ar em ambientes fechados.' },
-  { imagem: protoboard, titulo: 'Protoboard', descricao: 'Placa para montagem e testes de circuitos eletrônicos.' },
+  { imagem: protoboard, titulo: 'Protoboard', descricao: 'Componente que limita a corrente em um circuito.' },
   { imagem: leds, titulo: 'LEDs', descricao: 'Diodos emissores de luz, eficientes e amplamente utilizados em projetos eletrônicos.' },
   { imagem: altoFalante, titulo: 'Alto-Falante', descricao: 'Dispositivo para emissão de som em sistemas eletrônicos.' },
 ];

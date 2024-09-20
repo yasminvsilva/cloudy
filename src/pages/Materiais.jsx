@@ -2,6 +2,19 @@ import { motion } from 'framer-motion';
 import Header from "./Header"
 import MaterialCarrossel from '../components/MaterialCarrossel'
 import arduinoimg from '../assets/materiais/arduino.svg'
+import jumpersimg from '../assets/materiais/jumpers.svg'
+import protoboardimg from '../assets/materiais/protoboard.svg'
+import resistorimg from '../assets/materiais/resistor.svg'
+import umidificadora from '../assets/materiais/umidificadora.svg'
+import modulorele from '../assets/materiais/modulorele.svg'
+import leds from '../assets/materiais/leds.svg'
+import modulotp4056 from '../assets/materiais/modulo-tp4056.svg'
+import bateria from '../assets/materiais/bateria.svg'
+import df from '../assets/materiais/df.svg'
+import altofalante from '../assets/materiais/alto-falante.svg'
+import display from '../assets/materiais/display.svg'
+import rtc from '../assets/materiais/moduloRTC.svg'
+
 
 export default function Materiais() {
   return (
@@ -80,15 +93,15 @@ export default function Materiais() {
             <div className='mb-6'>
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={jumpersimg} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Jumpers</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>5,60</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Cabos para conectar componentes na protoboard.</p>
                 </div>
               </div>
             </div>
@@ -98,15 +111,15 @@ export default function Materiais() {
             <div className='mb-6'>
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={protoboardimg} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Protoboard</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>7,50</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Placa de ensaio com conexões condutoras.</p>
                 </div>
               </div>
             </div>
@@ -116,15 +129,15 @@ export default function Materiais() {
             <div className='mb-6'>
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={resistorimg} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Resistor</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>1,50</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Componente que limita a corrente em um circuito.</p>
                 </div>
               </div>
             </div>
@@ -142,15 +155,15 @@ export default function Materiais() {
 
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={umidificadora} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Placa driver</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>58,04</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Aumenta a umidade do ar em ambientes fechados.</p>
                 </div>
               </div>
             </div>
@@ -160,15 +173,15 @@ export default function Materiais() {
             <div className='mb-6'>
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={modulorele} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo relé</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>12,00</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Aciona qualquer carga específica energética.</p>
                 </div>
               </div>
             </div>
@@ -186,15 +199,15 @@ export default function Materiais() {
 
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={leds} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Fita LED WS2812B</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>24,80</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Emissores de luz utilizados em projetos eletrônicos.</p>
                 </div>
               </div>
             </div>
@@ -204,15 +217,15 @@ export default function Materiais() {
             <div className='mb-6'>
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={modulorele} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo relé</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>12,00</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Aciona qualquer carga específica energética.</p>
                 </div>
               </div>
             </div>
@@ -222,15 +235,15 @@ export default function Materiais() {
             <div className='mb-6'>
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={modulotp4056} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo TP4056</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>5,60</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Carregador de baterias de lítio contra sobrecarga.</p>
                 </div>
               </div>
             </div>
@@ -240,15 +253,15 @@ export default function Materiais() {
             <div className='mb-6'>
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={bateria} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Bateria</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>32,00</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Carrega carga em componentes eletrônicos.</p>
                 </div>
               </div>
             </div>
@@ -266,15 +279,15 @@ export default function Materiais() {
 
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={df} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>DFPlayer Mini</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>22,77</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Módulo de áudio para reproduzir sons e músicas.</p>
                 </div>
               </div>
             </div>
@@ -284,15 +297,15 @@ export default function Materiais() {
             <div className='mb-6'>
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={altofalante} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Alto falante</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>23,00</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Dispositivo para emissão de som em sistemas eletrônicos.</p>
                 </div>
               </div>
             </div>
@@ -310,15 +323,15 @@ export default function Materiais() {
 
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={display} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Display LED TM1637</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>15,78</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Dispositivo que ilustra quatro dígitos do relógio.</p>
                 </div>
               </div>
             </div>
@@ -328,15 +341,15 @@ export default function Materiais() {
             <div className='mb-6'>
               <div className='flex mt-6 gap-6'>
                 <div className='flex items-center'>
-                  <img className='w-[70px]' src={arduinoimg} alt="" />
+                  <img className='w-[70px]' src={rtc} alt="" />
                 </div>
 
                 <div className=''>
                   <div className='flex justify-between'>
                     <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo RTC</h2>
-                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                    <p className='text-roxo-titulo font-karla font-bold text-[14px]'>29,99</p>
                   </div>
-                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                  <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Módulo de relógio para controle preciso de tempo.</p>
                 </div>
               </div>
             </div>
