@@ -363,7 +363,7 @@ export default function Materiais() {
           {/* div geral */}
           <div>
             <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Geral</p>
-            
+
             {/* div para flex */}
             <div className='md:flex md:gap-6 xl:gap-16'>
 
@@ -403,7 +403,7 @@ export default function Materiais() {
                 <hr className='' />
               </div>
 
-              {/* div protoboard/resistor */} 
+              {/* div protoboard/resistor */}
               <div className='md:w-1/2'>
                 <hr className='' />
 
@@ -437,6 +437,250 @@ export default function Materiais() {
                 </div>
 
                 <hr className='' />
+              </div>
+            </div>
+
+          </div>
+
+          {/* div aromatizador */}
+          <div className='md:mt-[48px]'>
+            <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Aromatizador</p>
+
+            {/* div para flex */}
+            <div className='md:flex md:gap-6 xl:gap-16'>
+
+              {/* div placa driver */}
+              <div className='md:w-1/2'>
+                <hr className='' />
+
+                {/* div conteúdo placa driver */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={umidificadora} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Placa de driver</p>
+                    <p className='md:font-overpass md:text-[13px]'>Aumenta a umidade do ar em ambientes fechados.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>58,04</p>
+
+                </div>
+
+                <hr className='' />
+
+              </div>
+
+              {/* div módulo relé */}
+              <div className='md:w-1/2'>
+                <hr className='' />
+
+                {/* div conteúdo módulo relé */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={modulorele} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo relé</p>
+                    <p className='md:font-overpass md:text-[13px]'>Aciona qualquer carga específica energética.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>12,00</p>
+
+                </div>
+
+                <hr className='' />
+                
+              </div>
+            </div>
+
+          </div>
+
+          {/* div luminária */}
+          <div className='md:mt-[48px]'>
+            <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Luminária</p>
+
+            {/* div para flex */}
+            <div className='md:flex md:gap-6 xl:gap-16'>
+
+              {/* div led/módulo */}
+              <div className='md:w-1/2'>
+                <hr className='' />
+
+                {/* div conteúdo led */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={leds} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Fita LED WS2812B</p>
+                    <p className='md:font-overpass md:text-[13px]'>Emissores de luz utilizados em projetos eletrônicos.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>24,80</p>
+
+                </div>
+
+                <hr className='' />
+
+                {/* div conteúdo rele */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={modulorele} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo relé</p>
+                    <p className='md:font-overpass md:text-[13px]'>Aciona qualquer carga específica energética.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>12,00</p>
+                </div>
+
+                <hr className='' />
+              </div>
+
+              {/* div protoboard/resistor */}
+              <div className='md:w-1/2'>
+                <hr className='' />
+
+                {/* div conteúdo protoboard */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={modulotp4056} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo TP4056</p>
+                    <p className='md:font-overpass md:text-[13px]'>Carregador de baterias de lítio contra sobrecarga.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>5,60</p>
+
+                </div>
+
+                <hr className='' />
+
+                {/* div conteúdo resistor */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={bateria} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Bateria</p>
+                    <p className='md:font-overpass md:text-[13px]'>Carrega carga em componentes eletrônicos.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>32,00</p>
+                </div>
+
+                <hr className='' />
+              </div>
+            </div>
+
+          </div>
+
+          {/* div reprodutor de música */}
+          <div className='md:mt-[48px]'>
+            <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Reprodutor de música</p>
+
+            {/* div para flex */}
+            <div className='md:flex md:gap-6 xl:gap-16'>
+
+              {/* div dfplayer */}
+              <div className='md:w-1/2'>
+                <hr className='' />
+
+                {/* div conteúdo dfplayer */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={df} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>DFPlayer Mini</p>
+                    <p className='md:font-overpass md:text-[13px]'>Módulo de áudio para reproduzir sons e músicas.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>22,77</p>
+
+                </div>
+
+                <hr className='' />
+
+              </div>
+
+              {/* div alto falante */}
+              <div className='md:w-1/2'>
+                <hr className='' />
+
+                {/* div conteúdo alto falante */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={altofalante} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Alto falante</p>
+                    <p className='md:font-overpass md:text-[13px]'>Dispositivo para emissão de som em sistemas eletrônicos.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>23,00</p>
+
+                </div>
+
+                <hr className='' />
+                
+              </div>
+            </div>
+
+          </div>
+
+          {/* div relógio */}
+          <div className='md:mt-[48px]'>
+            <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Relógio</p>
+
+            {/* div para flex */}
+            <div className='md:flex md:gap-6 xl:gap-16'>
+
+              {/* div relógio/rtc */}
+              <div className='md:w-1/2'>
+                <hr className='' />
+
+                {/* div conteúdo relogio */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={display} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Display LED TM1637</p>
+                    <p className='md:font-overpass md:text-[13px]'>Dispositivo que ilustra quatro dígitos do relógio.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>15,78</p>
+
+                </div>
+
+                <hr className='' />
+
+              </div>
+
+              {/* div rtc */}
+              <div className='md:w-1/2'>
+                <hr className='' />
+
+                {/* div conteúdo rtc */}
+                <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
+                  <div className='md:flex md:items-center'><img className='md:w-20' src={rtc} alt="" /></div>
+
+                  {/* div conjunto de textos */}
+                  <div>
+                    <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo RTC</p>
+                    <p className='md:font-overpass md:text-[13px]'>Módulo de relógio para controle preciso de tempo.</p>
+                  </div>
+
+                  <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>29,99</p>
+
+                </div>
+
+                <hr className='' />
+                
               </div>
             </div>
 
