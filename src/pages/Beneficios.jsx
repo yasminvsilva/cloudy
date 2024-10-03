@@ -1,12 +1,18 @@
 import certo from '../assets/iconeCerto.svg'
 import imagensBeneficios from '../assets/imagensBeneficios.svg'
 
+import { motion } from 'framer-motion';
+
 export default function Beneficios() {
     return (
 
         <div className='md:flex md:gap-10 lg:gap-6 xl:gap-16 2xl:gap-20'>
 
-            <div className='md:order-2 md:flex-1'>
+            <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1.1 }}
+            className='md:order-2 md:flex-1'>
                 <h2 className='
             font-karla font-bold text-[23px] mb-16
             md:w-[100%] md:text-[3vw] md:mb-[4vw]
@@ -30,7 +36,7 @@ export default function Beneficios() {
                     <div className='md:flex-grow md:basis-[45%] flex flex-col justify-between'>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
                             <img className='w-5 md:w-4 xl:w-5' src={certo} />
-                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw]'>Redução da insônia</p>
+                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw]'>Redução do distúrbio de insônia</p>
                         </div>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
                             <img className='w-5 md:w-4 xl:w-5' src={certo} />
@@ -57,13 +63,16 @@ export default function Beneficios() {
                         </div>
                     </div>
                 </div>
+            </motion.div>
 
-            </div>
-
-            <div className='
+            <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            className='
             md:flex-1 md:flex md:justify-center md:items-align'>
                 <img className='mt-16 md:mt-12 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-[500px] xl:h-[380px] xl:mt-6' src={imagensBeneficios} alt="Benefícios" />
-            </div>
+            </motion.div>
         </div>
     )
 }

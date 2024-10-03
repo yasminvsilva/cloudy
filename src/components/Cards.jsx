@@ -6,7 +6,7 @@ import celular from '../assets/iconeCelular.svg'
 export default function Cards() {
   return (
     <div className='hidden lg:block 2xl:mt-24 2xl:mb-24'>
-        <div className='flex gap-2.5 mb-20 flex justify-center xl:gap-8'>
+        <div className='flex gap-2.5 mb-20 flex justify-center xl:gap-8 xl:mb-24'>
             <section className='
             xl:justify-center
             bg-secao-diferencial w-56 h-48 rounded-3xl py-6 px-6 flex flex-col items-center'>
