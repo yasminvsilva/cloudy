@@ -20,7 +20,7 @@ export default function Inicial() {
               xl:text-[50px]
               lg:text-[40px] lg:mt-24
               md:mt-20 md:text-[29px]
-              font-karla font-bold text-[8vw] mt-16 mb-10 leading-[113%]'><span className='text-roxo-titulo'>Recupere</span> suas noites, <br></br> <span className='text-roxo-titulo'>renove</span> suas energias</motion.h1>
+              font-karla font-bold text-[8vw] mt-16 mb-10 leading-[113%] dark:text-white'><span className='text-roxo-titulo dark:text-roxo-claro'>Recupere</span> suas noites, <br></br> <span className='text-roxo-titulo dark:text-roxo-claro'>renove</span> suas energias</motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function Inicial() {
               2xl:w-3/4 2xl:text-[20px] 2xl:mt-14 2xl:mb-16
               lg:w-96 lg:mt-12 lg:mb-12
               md:w-72
-              font-overpass text-[18px] text-justify mb-10'>Experimente o Cloudy como uma abordagem para melhorar as suas noites de sono</motion.p>
+              font-overpass text-[18px] text-justify mb-10 dark:text-white'>Experimente o Cloudy como uma abordagem para melhorar as suas noites de sono</motion.p>
       
               <motion.div
                 initial={{ opacity: 0, y: 10 }}

@@ -11,7 +11,7 @@ export default function Apresentacao() {
         <h2 id="referencia" className="
         xl:w-[450px] xl:text-[35px] xl:leading-[135%]
         lg:w-82
-        font-karla font-bold text-[23px] lg:text-[26px] mb-20">
+        font-karla font-bold text-[23px] lg:text-[26px] mb-20 dark:text-white">
           O Cloudy é a <span className="text-verde-titulo">melhor opção</span> para evitar noites em claro
         </h2>
       </motion.div>
@@ -23,7 +23,7 @@ export default function Apresentacao() {
         <p className="
         2xl:mb-[100px]
         xl:text-[18px] xl-w-[500px]
-        font-overpass text-[16px] text-justify mb-16">
+        font-overpass text-[16px] text-justify mb-16 dark:text-white">
           Encontramos a solução para transformar suas noites e proporcionar uma qualidade de vida melhor. Com nossa abordagem inovadora, você finalmente encontrará o sono profundo e restaurador que merece.
         </p>
       </motion.div>

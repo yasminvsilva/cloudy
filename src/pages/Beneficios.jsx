@@ -19,6 +19,7 @@ export default function Beneficios() {
             lg:text-[2.55vw] lg:mb-[3.2vw]
             xl:text-[2.73vw]
             2xl:text-[2.05vw]
+            dark:text-white
           '>
                     Para nós, a qualidade do <br></br> seu sono é <span className='text-roxo-titulo'>prioridade</span>
                 </h2>
@@ -28,6 +29,8 @@ export default function Beneficios() {
             lg:text-[1.6vw] lg:mb-[3.2vw]
             xl:text-[1.4vw]
             2xl:text-[1.04vw]
+
+            dark:text-white
           '>
                     Dormir bem é ser saudável. Conheça alguns dos benefícios que você vai ter ao adquirir o Cloudy:
                 </p>
@@ -36,30 +39,30 @@ export default function Beneficios() {
                     <div className='md:flex-grow md:basis-[45%] flex flex-col justify-between'>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
                             <img className='w-5 md:w-4 xl:w-5' src={certo} />
-                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw]'>Redução do distúrbio de insônia</p>
+                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Redução da insônia</p>
                         </div>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
                             <img className='w-5 md:w-4 xl:w-5' src={certo} />
-                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw]'>Criação de hábitos saudáveis de sono</p>
+                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Criação de hábitos saudáveis de sono</p>
                         </div>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
                             <img className='w-5 md:w-4 xl:w-5' src={certo} />
-                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw]'>Melhora na qualidade do sono</p>
+                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Melhora na qualidade do sono</p>
                         </div>
                     </div>
 
                     <div className='md:flex-grow md:basis-[45%] flex flex-col justify-between'>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
                             <img className='w-5 md:w-4 xl:w-5' src={certo} />
-                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw]'>Aumento da energia diurna</p>
+                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Aumento da energia diurna</p>
                         </div>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
                             <img className='w-5 md:w-4 xl:w-5' src={certo} />
-                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw]'>Diminuição do estresse</p>
+                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Diminuição do estresse</p>
                         </div>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
                             <img className='w-5 md:w-4 xl:w-5' src={certo} />
-                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw]'>Conveniência e facilidade de uso</p>
+                            <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Conveniência e facilidade de uso</p>
                         </div>
                     </div>
                 </div>

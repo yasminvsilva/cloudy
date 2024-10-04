@@ -4,6 +4,8 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -28,7 +30,14 @@ export default {
         'linha': '#B1B1B1',
         'guia': '#FAFFF9',
         // página de materiais
-        'texto-materiais': 'rgba(0, 0, 0, 0.75)'
+        'texto-materiais': 'rgba(0, 0, 0, 0.75)',
+
+        // modo escuro
+        'background-black': '#1B1B2C',
+        'bg-cards': '#2C2C4A',
+        'bg-img-cards': '#8B8CB5',
+        'bg-usodiario': '#212131',
+        'branco-t': 'rgba(255, 255, 255, 0.85)'
       },
     },
   },

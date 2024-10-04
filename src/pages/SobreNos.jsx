@@ -22,7 +22,7 @@ export default function SobreNos() {
           2xl:mt-20
           xl:text-[36px]
           lg:text-[32px] lg:mb-24
-          font-karla font-bold text-[26px] mt-16 mb-16 text-center leading-[125%]'>
+          font-karla font-bold text-[26px] mt-16 mb-16 text-center leading-[125%] dark:text-white'>
             <span className=''>Saiba</span> quem são os <br></br> nossos{' '} 
             <span className='text-roxo-titulo'>desenvolvedores</span>
           </h1>
@@ -37,7 +37,7 @@ export default function SobreNos() {
             >
               <p className='
               xl:text-[18px]
-              font-overpass text-[16px] text-justify mb-6'>
+              font-overpass text-[16px] text-justify mb-6 dark:text-white'>
                 Somos um grupo de estudantes do Centro Universitário Adventista de São Paulo, cursando o terceiro ano do ensino médio. Nossa equipe é formada por: João Pedro Costa, Mariana Alves e Yasmin Vitória.
               </p>
             </motion.div>
@@ -49,7 +49,7 @@ export default function SobreNos() {
             >
               <p className='
               xl:text-[18px]
-              font-overpass text-[16px] text-justify mb-6'>
+              font-overpass text-[16px] text-justify mb-6 dark:text-white'>
                 Nosso projeto surgiu da compreensão das dificuldades enfrentadas pelas pessoas em relação aos <span className='font-bold text-azul-titulo'>distúrbios de sono</span>. Nosso objetivo é criar soluções que melhorem a <span className='font-bold text-azul-titulo'>qualidade de vida</span> por meio de tecnologias acessíveis e eficazes.
               </p>
             </motion.div>
@@ -61,7 +61,7 @@ export default function SobreNos() {
             >
               <p className='
               xl:text-[18px]
-              font-overpass text-[16px] text-justify mb-12'>
+              font-overpass text-[16px] text-justify mb-12 dark:text-white'>
                 Vimos na <span className='font-bold text-azul-titulo'>aromaterapia</span> uma oportunidade de desenvolver um dispositivo que, não apenas ajudasse a combater os distúrbios do sono, mas também oferecesse um ambiente relaxante por meio da <span className='font-bold text-azul-titulo'>música</span> e <span className='font-bold text-azul-titulo'>iluminação âmbar</span>.
               </p>
             </motion.div>

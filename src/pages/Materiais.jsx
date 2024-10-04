@@ -34,7 +34,7 @@ export default function Materiais() {
             2xl:mt-20
             xl:text-[36px]
             lg:text-[32px] lg:mb-20
-            font-karla font-bold text-[25px] text-center mt-16 mb-16 leading-[125%]">Conheça os <span className="text-roxo-titulo">materiais</span> <br></br> por trás do Cloudy</h1>
+            font-karla font-bold text-[25px] text-center mt-16 mb-16 leading-[125%] dark:text-white">Conheça os <span className="text-roxo-titulo">materiais</span> <br></br> por trás do Cloudy</h1>
         </motion.div>
 
         <motion.div
@@ -44,7 +44,7 @@ export default function Materiais() {
         >
           <p className="
             xl:text-[18px]
-            font-overpass text-justify mb-6 text-[16px]">Aqui você encontrará uma visão completa e detalhada dos componentes que utilizamos para dar vida ao <span className='font-bold text-azul-titulo'>Cloudy</span>. O nosso projeto é composto por várias partes integradas, cada uma desempenhando um papel crucial na funcionalidade geral.</p>
+            font-overpass text-justify mb-6 text-[16px] dark:text-white">Aqui você encontrará uma visão completa e detalhada dos componentes que utilizamos para dar vida ao <span className='font-bold text-azul-titulo'>Cloudy</span>. O nosso projeto é composto por várias partes integradas, cada uma desempenhando um papel crucial na funcionalidade geral.</p>
         </motion.div>
 
         <motion.div
@@ -54,7 +54,7 @@ export default function Materiais() {
         >
           <p className="
             xl:text-[18px]
-            font-overpass text-justify text-[16px] mb-16"> Desde o controle do <span className='font-bold text-azul-titulo'>aromatizador</span> até a reprodução de <span className='font-bold text-azul-titulo'>música</span>, iluminação <span className='font-bold text-azul-titulo'>RGB</span> e a exibição do <span className='font-bold text-azul-titulo'>tempo</span>, cada seção apresenta componentes específicos que colaboram para o funcionamento harmonioso do sistema.</p>
+            font-overpass text-justify text-[16px] mb-16 dark:text-white"> Desde o controle do <span className='font-bold text-azul-titulo'>aromatizador</span> até a reprodução de <span className='font-bold text-azul-titulo'>música</span>, iluminação <span className='font-bold text-azul-titulo'>RGB</span> e a exibição do <span className='font-bold text-azul-titulo'>tempo</span>, cada seção apresenta componentes específicos que colaboram para o funcionamento harmonioso do sistema.</p>
         </motion.div>
 
         <motion.div
@@ -81,7 +81,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Arduíno UNO</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Microcontrolador versátil para diversos projetos.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Microcontrolador versátil para diversos projetos.</p>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Jumpers</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>5,60</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Cabos para conectar componentes na protoboard.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Cabos para conectar componentes na protoboard.</p>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Protoboard</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>7,50</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Placa de ensaio com conexões condutoras.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Placa de ensaio com conexões condutoras.</p>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Resistor</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>1,50</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Componente que limita a corrente em um circuito.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Componente que limita a corrente em um circuito.</p>
               </div>
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Placa driver</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>58,04</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Aumenta a umidade do ar em ambientes fechados.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Aumenta a umidade do ar em ambientes fechados.</p>
               </div>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo relé</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>12,00</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Aciona qualquer carga específica energética.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Aciona qualquer carga específica energética.</p>
               </div>
             </div>
           </div>
@@ -203,7 +203,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Fita LED WS2812B</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>24,80</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Emissores de luz utilizados em projetos eletrônicos.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Emissores de luz utilizados em projetos eletrônicos.</p>
               </div>
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo relé</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>12,00</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Aciona qualquer carga específica energética.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Aciona qualquer carga específica energética.</p>
               </div>
             </div>
           </div>
@@ -239,7 +239,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo TP4056</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>5,60</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Carregador de baterias de lítio contra sobrecarga.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Carregador de baterias de lítio contra sobrecarga.</p>
               </div>
             </div>
           </div>
@@ -257,7 +257,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Bateria</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>32,00</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Carrega carga em componentes eletrônicos.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Carrega carga em componentes eletrônicos.</p>
               </div>
             </div>
           </div>
@@ -283,7 +283,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>DFPlayer Mini</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>22,77</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Módulo de áudio para reproduzir sons e músicas.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Módulo de áudio para reproduzir sons e músicas.</p>
               </div>
             </div>
           </div>
@@ -301,7 +301,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Alto falante</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>23,00</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Dispositivo para emissão de som em sistemas eletrônicos.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Dispositivo para emissão de som em sistemas eletrônicos.</p>
               </div>
             </div>
           </div>
@@ -327,7 +327,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Display LED TM1637</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>15,78</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Dispositivo que ilustra quatro dígitos do relógio.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Dispositivo que ilustra quatro dígitos do relógio.</p>
               </div>
             </div>
           </div>
@@ -345,7 +345,7 @@ export default function Materiais() {
                   <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo RTC</h2>
                   <p className='text-roxo-titulo font-karla font-bold text-[14px]'>29,99</p>
                 </div>
-                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5'>Módulo de relógio para controle preciso de tempo.</p>
+                <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Módulo de relógio para controle preciso de tempo.</p>
               </div>
             </div>
           </div>
@@ -382,7 +382,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Arduíno UNO</p>
-                      <p className='md:font-overpass md:text-[13px]'>Microcontrolador versátil para diversos projetos.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Microcontrolador versátil para diversos projetos.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>89,99</p>
@@ -398,7 +398,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Jumpers</p>
-                      <p className='md:font-overpass md:text-[13px]'>Cabos para conectar componentes na protoboard.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Cabos para conectar componentes na protoboard.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>5,60</p>
@@ -418,7 +418,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Protoboard</p>
-                      <p className='md:font-overpass md:text-[13px]'>Placa de ensaio com conexões condutoras.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Placa de ensaio com conexões condutoras.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>7,50</p>
@@ -434,7 +434,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Resistor</p>
-                      <p className='md:font-overpass md:text-[13px]'>Componente que limita a corrente em um circuito.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Componente que limita a corrente em um circuito.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>1,50</p>
@@ -464,7 +464,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Placa de driver</p>
-                      <p className='md:font-overpass md:text-[13px]'>Aumenta a umidade do ar em ambientes fechados.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Aumenta a umidade do ar em ambientes fechados.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>58,04</p>
@@ -486,7 +486,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo relé</p>
-                      <p className='md:font-overpass md:text-[13px]'>Aciona qualquer carga específica energética.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Aciona qualquer carga específica energética.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>12,00</p>
@@ -518,7 +518,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Fita LED WS2812B</p>
-                      <p className='md:font-overpass md:text-[13px]'>Emissores de luz utilizados em projetos eletrônicos.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Emissores de luz utilizados em projetos eletrônicos.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>24,80</p>
@@ -534,7 +534,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo relé</p>
-                      <p className='md:font-overpass md:text-[13px]'>Aciona qualquer carga específica energética.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Aciona qualquer carga específica energética.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>12,00</p>
@@ -554,7 +554,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo TP4056</p>
-                      <p className='md:font-overpass md:text-[13px]'>Carregador de baterias de lítio contra sobrecarga.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Carregador de baterias de lítio contra sobrecarga.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>5,60</p>
@@ -570,7 +570,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Bateria</p>
-                      <p className='md:font-overpass md:text-[13px]'>Carrega carga em componentes eletrônicos.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Carrega carga em componentes eletrônicos.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>32,00</p>
@@ -600,7 +600,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>DFPlayer Mini</p>
-                      <p className='md:font-overpass md:text-[13px]'>Módulo de áudio para reproduzir sons e músicas.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Módulo de áudio para reproduzir sons e músicas.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>22,77</p>
@@ -622,7 +622,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Alto falante</p>
-                      <p className='md:font-overpass md:text-[13px]'>Dispositivo para emissão de som em sistemas eletrônicos.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Dispositivo para emissão de som em sistemas eletrônicos.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>23,00</p>
@@ -654,7 +654,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Display LED TM1637</p>
-                      <p className='md:font-overpass md:text-[13px]'>Dispositivo que ilustra quatro dígitos do relógio.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Dispositivo que ilustra quatro dígitos do relógio.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>15,78</p>
@@ -676,7 +676,7 @@ export default function Materiais() {
                     {/* div conjunto de textos */}
                     <div>
                       <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo RTC</p>
-                      <p className='md:font-overpass md:text-[13px]'>Módulo de relógio para controle preciso de tempo.</p>
+                      <p className='md:font-overpass md:text-[13px] dark:text-white'>Módulo de relógio para controle preciso de tempo.</p>
                     </div>
 
                     <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>29,99</p>
@@ -693,7 +693,6 @@ export default function Materiais() {
         </motion.div>
         
       </div>
-
     </div>
   )
 }

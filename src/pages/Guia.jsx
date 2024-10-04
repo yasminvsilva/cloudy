@@ -27,7 +27,7 @@ export default function Guia() {
             className="
             xl:text-[36px] xl:mb-20
             lg:text-[32px] lg:mb-20
-            font-karla font-bold text-[26px] mt-16 mb-16 text-center leading-[125%]">Veja como é <span className="text-roxo-titulo">fácil</span> <br></br> utilizar o Cloudy
+            font-karla font-bold text-[26px] mt-16 mb-16 text-center leading-[125%] dark:text-white">Veja como é <span className="text-roxo-titulo">fácil</span> <br></br> utilizar o Cloudy
             </motion.h1>
 
             <motion.img
@@ -57,11 +57,11 @@ export default function Guia() {
                 <h2 className="
                 xl:text-[30px]
                 lg:text-[25px]
-                text-[21px] font-karla font-bold mb-12">Dê o primeiro passo <br /> iniciando o <span className="text-roxo-titulo">Cloudy</span></h2>
+                text-[21px] font-karla font-bold mb-12 dark:text-white">Dê o primeiro passo <br /> iniciando o <span className="text-roxo-titulo">Cloudy</span></h2>
                 <p className="
                 xl:text-[18px]
                 md:w-[95%] md:mb-0
-                font-overpass text-[16px] text-justify mb-12">
+                font-overpass text-[16px] text-justify mb-12 dark:text-white">
                 Primeiro, conecte o Cloudy à energia elétrica usando o cabo fornecido. Depois, configure o relógio de acordo com suas preferências. Por último, adicione água e óleo de lavanda ao reservatório para iniciar a aromaterapia.
                 </p>
             </div>
@@ -98,13 +98,13 @@ export default function Guia() {
                 xl:text-[30px]
                 lg:text-[25px]
                 md:text-right
-                text-[21px] font-karla font-bold mb-12">Aqui trabalhamos <br></br> à <span className="text-azul-titulo">sua</span> maneira</h2>
+                text-[21px] font-karla font-bold mb-12 dark:text-white">Aqui trabalhamos <br></br> à <span className="text-azul-titulo">sua</span> maneira</h2>
                 
                 <div className='text-left'>
                     <p className="
                     xl:text-[18px]
                     md:mb-0 
-                    font-overpass text-[16px] text-justify mb-12">Ajuste a duração da difusão do óleo essencial para se adequar ao seu ciclo de sono e escolha entre músicas relaxantes e ruídos brancos. Ajuste o volume do som conforme necessário.</p>
+                    font-overpass text-[16px] text-justify mb-12 dark:text-white">Ajuste a duração da difusão do óleo essencial para se adequar ao seu ciclo de sono e escolha entre músicas relaxantes e ruídos brancos. Ajuste o volume do som conforme necessário.</p>
                 </div>
             </div>
 
@@ -130,7 +130,9 @@ export default function Guia() {
         2xl:-mx-[300px] 2xl:justify-center 2xl:px-12
         lg:-mx-[110px] lg:py-8
         md:flex md:-mx-12 md:px-4
-        bg-guia -mx-8 ">
+        bg-guia -mx-8 
+        
+        dark:bg-bg-usodiario">
             <div className='flex justify-center'>
                 <motion.img
                     initial={{ opacity: 0, scale: 0.95 }}
@@ -152,7 +154,7 @@ export default function Guia() {
                     <h2 className="
                     xl:text-[30px] xl:mb-20
                     lg:text-[25px] lg:mb-16
-                    flex flex-col justify-center items-center text-[21px] font-karla font-bold mb-12 leading-[130%]">Se atente ao <br></br> <span className="text-verde-titulo">uso diário</span> </h2>
+                    flex flex-col justify-center items-center text-[21px] font-karla font-bold mb-12 leading-[130%] dark:text-white">Se atente ao <br></br> <span className="text-verde-titulo">uso diário</span> </h2>
                 </div>
 
                 <div className="
@@ -162,10 +164,10 @@ export default function Guia() {
                     <p className="
                     xl:text-[18px]
                     lg:mb-0
-                    font-overpass text-[16px] text-center mb-8">Verifique se todas as configurações estão ajustadas.</p>
+                    font-overpass text-[16px] text-center mb-8 dark:text-white">Verifique se todas as configurações estão ajustadas.</p>
                     <p className="
                     xl:text-[18px]
-                    font-overpass text-[16px] text-center">Ative o Cloudy pressionando o botão de ligar/desligar.</p>
+                    font-overpass text-[16px] text-center dark:text-white">Ative o Cloudy pressionando o botão de ligar/desligar.</p>
                 </div>
             </div>
 
@@ -195,11 +197,11 @@ export default function Guia() {
                 <h2 className="
                 xl:text-[30px]
                 lg:text-[25px]
-                text-[21px] font-karla font-bold mb-12">Cuidar do <span className="text-roxo-titulo">Cloudy</span> é <br></br> cuidar de <span className="text-roxo-titulo">você</span></h2>
+                text-[21px] font-karla font-bold mb-12 dark:text-white">Cuidar do <span className="text-roxo-titulo">Cloudy</span> é <br></br> cuidar de <span className="text-roxo-titulo">você</span></h2>
                 <p className="
                 xl:text-[18px]
                 md:w-[95%]
-                font-overpass text-[16px] text-justify mb-12">Limpe regularmente o reservatório de água e o difusor de aromaterapia e substitua o óleo essencial de lavanda conforme necessário. Armazene o Cloudy em local fresco e seco quando não estiver em uso.</p>
+                font-overpass text-[16px] text-justify mb-12 dark:text-white">Limpe regularmente o reservatório de água e o difusor de aromaterapia e substitua o óleo essencial de lavanda conforme necessário. Armazene o Cloudy em local fresco e seco quando não estiver em uso.</p>
             </div>
 
             <div className="
@@ -223,11 +225,11 @@ export default function Guia() {
         xl:h-32
         lg:mb-24 lg:-mx-[110px] lg:h-28
         md:-mx-12
-        flex justify-center items-center bg-azul-guia h-24 -mx-8 mb-16">
+        flex justify-center items-center bg-azul-guia h-24 -mx-8 mb-16 dark:bg-bg-usodiario">
             <p className="
             xl:text-[30px]
             lg:text-[25px]
-            font-karla font-bold text-[21px]">Experimente <span className="text-azul-titulo">agora!</span></p>
+            font-karla font-bold text-[21px] dark:text-white">Experimente <span className="text-azul-titulo">agora!</span></p>
         </motion.div>
 
         <motion.div
@@ -242,11 +244,13 @@ export default function Guia() {
                 <p className="
                 xl:text-[18px]
                 md:w-[95%]
-                font-overpass text-[16px] text-justify mb-12">Agora é só desfrutar dos benefícios do Cloudy! Transforme sua rotina de sono e desfrute de uma noite verdadeiramente rejuvenescedora.</p>
+                font-overpass text-[16px] text-justify mb-12 dark:text-white">Agora é só desfrutar dos benefícios do Cloudy! Transforme sua rotina de sono e desfrute de uma noite verdadeiramente rejuvenescedora.</p>
                 
                 <div className="flex justify-center">
                     <button 
-                        className="text-azul-carrossel border-azul-carrossel border-2 rounded-2xl w-[120px] h-[42px] font-overpass text-[16px] text-center mb-12 hover:bg-azul-titulo hover:text-white hover:border-azul-titulo transition-colors duration-300 ease-in-out" 
+                        className="text-azul-carrossel border-azul-carrossel border-2 rounded-2xl w-[120px] h-[42px] font-overpass text-[16px] text-center mb-12 hover:bg-azul-titulo hover:text-white hover:border-azul-titulo transition-colors duration-300 ease-in-out
+                        
+                        dark:text-azul-titulo dark:border-azul-titulo dark:hover:text-background-black" 
                         onClick={() => {
                             navegacao('/guia');
                             window.scrollTo({ top: 0, behavior: 'smooth' });

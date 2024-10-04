@@ -16,11 +16,11 @@ export default function Diferencial() {
           <h2 className='
             xl:text-[35px]
             lg:text-[26px] lg:mt-10 lg:mb-8
-            font-karla font-bold text-[23px] mb-20'>Qual é o <span className='text-azul-titulo'>diferencial</span> do Cloudy?</h2>
+            font-karla font-bold text-[23px] mb-20 dark:text-white'>Qual é o <span className='text-azul-titulo'>diferencial</span> do Cloudy?</h2>
           <p className='
             xl:text-[18px] xl:w-2/4 xl:mt-12
             lg:w-2/3
-            font-overpass text-[16px] text-justify mb-16'>O nosso produto te oferece diversas funcionalidades que se destacam, tudo para garantir a sua qualidade de sono.</p>
+            font-overpass text-[16px] text-justify mb-16 dark:text-white'>O nosso produto te oferece diversas funcionalidades que se destacam, tudo para garantir a sua qualidade de sono.</p>
         </div>
       </motion.div>
 
