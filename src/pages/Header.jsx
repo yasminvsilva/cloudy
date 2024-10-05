@@ -16,16 +16,13 @@ import luaDeskHover from '../assets/luaDeskHover.svg'
 
 import logoDark from '../assets/logoDark.svg'
 
-export default function Header() {
+import solLight from '../assets/solLight.svg'
+
+export default function Header({ isDarkMode, setIsDarkMode }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isLuaHovered, setLuaisHovered] = useState(false);
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Verifica se há uma preferência salva no localStorage
-    const savedMode = localStorage.getItem('darkMode');
-    return savedMode === 'true'; // Retorna true se o modo escuro estiver salvo
-  });
-
+  
   const navegacao = useNavigate();
   const location = useLocation();
   const headerRef = useRef(null);
@@ -55,16 +52,6 @@ export default function Header() {
     };
   }, [isHeaderOpen]);
 
-  // Atualiza o localStorage e aplica a classe 'dark' ao body
-  useEffect(() => {
-    localStorage.setItem('darkMode', isDarkMode);
-    if (isDarkMode) {
-      document.body.classList.add('dark');
-    } else {
-      document.body.classList.remove('dark');
-    }
-  }, [isDarkMode]);
-
   return (
     <div className='flex justify-between'>
       <div className='
@@ -73,32 +60,31 @@ export default function Header() {
         <img src={isDarkMode ? logoDark : logo} alt="Logo" />
       </div>
 
-
       <div className='
       lg:flex lg:gap-10
       md:flex md:text-[14px] md:gap-5 justify-center
       gap-8 font-karla hidden'>
         <button
           onClick={() => navegacao('/')}
-          className={`${location.pathname === '/' ? 'text-roxo-claro' : 'dark:text-branco hover:text-roxo-claro'}`}
+          className={`${location.pathname === '/' ? 'text-roxo-claro' : 'dark:text-branco dark:hover:text-roxo-claro hover:text-roxo-claro'}`}
         >
           Home
         </button>
         <button
           onClick={() => navegacao('/guia')}
-          className={`${location.pathname === '/guia' ? 'text-roxo-claro' : 'dark:text-branco hover:text-roxo-claro'}`}
+          className={`${location.pathname === '/guia' ? 'text-roxo-claro' : 'dark:text-branco dark:hover:text-roxo-claro hover:text-roxo-claro'}`}
         >
           Guia
         </button>
         <button
           onClick={() => navegacao('/materiais')}
-          className={`${location.pathname === '/materiais' ? 'text-roxo-claro' : 'dark:text-branco hover:text-roxo-claro'}`}
+          className={`${location.pathname === '/materiais' ? 'text-roxo-claro' : 'dark:text-branco dark:hover:text-roxo-claro hover:text-roxo-claro'}`}
         >
           Materiais
         </button>
         <button
           onClick={() => navegacao('/referencias')}
-          className={`${location.pathname === '/referencias' ? ' text-roxo-claro' : 'dark:text-branco hover:text-roxo-claro'} `}
+          className={`${location.pathname === '/referencias' ? ' text-roxo-claro' : 'dark:text-branco dark:hover:text-roxo-claro hover:text-roxo-claro'} `}
         >
           Referências
         </button>
@@ -118,12 +104,11 @@ export default function Header() {
 
         <button onClick={() => setIsDarkMode(!isDarkMode)}>
           <img className='hidden md:block md:w-8'
-            src={isDarkMode ? luaDeskHover : luaDesktop}
+            src={isDarkMode ? solLight : luaDesktop}
             alt="Ícone de lua"
             onMouseEnter={() => setLuaisHovered(true)}
             onMouseLeave={() => setLuaisHovered(false)} />
         </button>
-
       </div>
 
       <div className='block md:hidden flex justify-between gap-1'>

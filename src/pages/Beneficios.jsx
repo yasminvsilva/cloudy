@@ -3,7 +3,9 @@ import imagensBeneficios from '../assets/imagensBeneficios.svg'
 
 import { motion } from 'framer-motion';
 
-export default function Beneficios() {
+import certoDark from '../assets/certoDark.svg'
+
+export default function Beneficios({ isDarkMode }) {
     return (
 
         <div className='md:flex md:gap-10 lg:gap-6 xl:gap-16 2xl:gap-20'>
@@ -38,30 +40,30 @@ export default function Beneficios() {
                 <div className='md:flex md:flex-wrap md:gap-6 md:items-center xl:gap-10'>
                     <div className='md:flex-grow md:basis-[45%] flex flex-col justify-between'>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
-                            <img className='w-5 md:w-4 xl:w-5' src={certo} />
+                            <img className='w-5 md:w-4 xl:w-5' src={isDarkMode ? certoDark : certo} />
                             <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Redução da insônia</p>
                         </div>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
-                            <img className='w-5 md:w-4 xl:w-5' src={certo} />
+                            <img className='w-5 md:w-4 xl:w-5' src={isDarkMode ? certoDark : certo} />
                             <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Criação de hábitos saudáveis de sono</p>
                         </div>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
-                            <img className='w-5 md:w-4 xl:w-5' src={certo} />
+                            <img className='w-5 md:w-4 xl:w-5' src={isDarkMode ? certoDark : certo} />
                             <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Melhora na qualidade do sono</p>
                         </div>
                     </div>
 
                     <div className='md:flex-grow md:basis-[45%] flex flex-col justify-between'>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
-                            <img className='w-5 md:w-4 xl:w-5' src={certo} />
+                            <img className='w-5 md:w-4 xl:w-5' src={isDarkMode ? certoDark : certo} />
                             <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Aumento da energia diurna</p>
                         </div>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
-                            <img className='w-5 md:w-4 xl:w-5' src={certo} />
+                            <img className='w-5 md:w-4 xl:w-5' src={isDarkMode ? certoDark : certo} />
                             <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Diminuição do estresse</p>
                         </div>
                         <div className='flex gap-2 mb-2.5 md:mb-4 items-center xl:gap-4'>
-                            <img className='w-5 md:w-4 xl:w-5' src={certo} />
+                            <img className='w-5 md:w-4 xl:w-5' src={isDarkMode ? certoDark : certo} />
                             <p className='font-overpass text-[16px] md:text-[1.8vw] lg:text-[1.6vw] xl:text-[1.4vw] 2xl:text-[1.04vw] dark:text-white'>Conveniência e facilidade de uso</p>
                         </div>
                     </div>

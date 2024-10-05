@@ -37,7 +37,8 @@ export default {
         'bg-cards': '#2C2C4A',
         'bg-img-cards': '#8B8CB5',
         'bg-usodiario': '#212131',
-        'branco-t': 'rgba(255, 255, 255, 0.85)'
+        'branco-t': 'rgba(255, 255, 255, 0.85)',
+        'linha': '#666666'
       },
     },
   },

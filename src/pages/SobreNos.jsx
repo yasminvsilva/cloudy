@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import Header from './Header';
 
 import logoUnasp from '../assets/logo-unasp.svg';
 import imagens from '../assets/imagens-sobre-nos.svg';
 
-export default function SobreNos() {
+import unaspDark from '../assets/unaspDark.svg';
+
+export default function SobreNos({ isDarkMode }) {
   return (
     <div>
-      <Header />
       <div className='
       2xl:px-[100px]
       xl:px-[30px]
@@ -85,7 +85,7 @@ export default function SobreNos() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.6 }}
             >
-              <img src={logoUnasp} alt="" />
+              <img src={isDarkMode ? unaspDark : logoUnasp} alt="" />
             </motion.div>
           </div>
         </div>

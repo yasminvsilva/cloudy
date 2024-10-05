@@ -3,14 +3,15 @@ import images from '../assets/imagensTeste.svg'
 import Scroll from '../components/Scroll'
 import BotaoScroll from '../components/BotaoScroll'
 import NavegacaoBotao from '../components/NavegacaoBotao'
+import imagensDark from '../assets/fotoInicialDark.svg'
 
-export default function Inicial() {
+export default function Inicial({ isDarkMode }) {
   return (
+    
     <div>
         <div className='
         lg:mt-[40px]
         md:flex md:justify-between md:mt-[20px]'>
-
             <div className=''>
               <motion.h1
                 initial={{ opacity: 0, y: 10 }}
@@ -49,7 +50,7 @@ export default function Inicial() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                src={images}
+                src={(isDarkMode ? imagensDark : images)}
                 alt=""
               />
             </div>
@@ -62,7 +63,7 @@ export default function Inicial() {
         className='
         flex justify-center mt-16'
       >
-        <Scroll />
+        <Scroll isDarkMode={isDarkMode} />
       </motion.div>
         
     </div>

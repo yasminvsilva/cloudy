@@ -1,5 +1,10 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
+import Header from './pages/Header';
+import Inicial from './pages/Inicial.jsx';
+import Beneficios from './pages/Beneficios.jsx';
+import Apresentacao from './pages/Apresentacao.jsx';
+import Diferencial from './pages/Diferencial.jsx';
 import Home from './pages/Home';
 import Guia from './pages/Guia';
 import Materiais from './pages/Materiais';
@@ -7,21 +12,68 @@ import Referencias from './pages/Referencias';
 import SobreNos from './pages/SobreNos';
 import Footer from './pages/Footer';
 
+import { useState, useEffect } from 'react';
+
 export default function App() {
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem('darkMode');
+    return savedMode === 'true';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('darkMode', isDarkMode);
+    document.body.classList.toggle('dark', isDarkMode); // Adiciona ou remove a classe 'dark'
+  }, [isDarkMode]);
+
   return (
     <Router>
       <div>
-        <main className="
-        2xl:px-[300px]
-        lg:px-[110px] lg:py-[55px]
-        md:px-[48px] md:py-[55px]
-        px-[32px] py-[50px]">
+        <main className="2xl:px-[300px] lg:px-[110px] lg:py-[55px] md:px-[48px] md:py-[55px] px-[32px] py-[50px]">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/guia" element={<Guia />} />
-            <Route path="/materiais" element={<Materiais />} />
-            <Route path="/referencias" element={<Referencias />} />
-            <Route path="/sobrenos" element={<SobreNos />} />
+            <Route 
+              path="/" 
+              element={
+                <>
+                  <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+                  <Inicial isDarkMode={isDarkMode} />
+                  <Apresentacao />
+                  <Diferencial isDarkMode={isDarkMode} />
+                  <Beneficios isDarkMode={isDarkMode} />
+                </>
+              } 
+            />
+            <Route 
+              path="/guia" 
+              element={
+                <>
+                  <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+                  <Guia isDarkMode={isDarkMode} />
+                </>
+              } />
+            <Route 
+              path="/materiais" 
+              element={
+                <>
+                  <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+                  <Materiais isDarkMode={isDarkMode} />
+                </>
+              } />
+            <Route 
+              path="/referencias" 
+              element={
+                <>
+                  <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+                  <Referencias />
+                </>
+                } />
+            <Route 
+              path="/sobrenos" 
+              element={
+                <>
+                  <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+                  <SobreNos isDarkMode={isDarkMode} />
+                </>
+              } />
           </Routes>
         </main>
         <Footer />
@@ -29,3 +81,4 @@ export default function App() {
     </Router>
   );
 }
+

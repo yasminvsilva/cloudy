@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom'
 
-import Header from "./Header"
 import bolinhas from "../assets/bolinhasGuia.svg"
 import confsImg from "../assets/confsIniciais.svg"
 import personal from "../assets/personal.svg"
@@ -10,11 +9,12 @@ import experimente from "../assets/experimente.svg"
 import ladoE from "../assets/usoDbolinhasLadoE.svg"
 import ladoD from "../assets/usoDbolinhasLadoD.svg"
 
-export default function Guia() {
+import bolinhasDark from '../assets/bolinhasGuiaDark.svg'
+
+export default function Guia({ isDarkMode }) {
     const navegacao = useNavigate()
   return (
     <div>
-        <Header />
         <div className='
         xl:px-[160px]
         lg:pt-[50px]
@@ -37,7 +37,7 @@ export default function Guia() {
             className="
             xl:w-[12px] xl:mb-20
             lg:w-[10px] lg:mb-20
-            mb-16 m-auto w-[8px]" src={bolinhas} />
+            mb-16 m-auto w-[8px]" src={isDarkMode ? bolinhasDark : bolinhas} />
         </div>
 
         <motion.div

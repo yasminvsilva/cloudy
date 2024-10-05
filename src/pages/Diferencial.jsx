@@ -4,7 +4,7 @@ import Cards from '../components/Cards'
 
 import { motion } from 'framer-motion';
 
-export default function Diferencial() {
+export default function Diferencial({ isDarkMode }) {
   return (
     <div>
       <motion.div
@@ -31,7 +31,7 @@ export default function Diferencial() {
       >
 
         <div className='md:hidden lg:block'>
-          <Cards />
+          <Cards isDarkMode={isDarkMode} />
         </div>
 
         <div className='

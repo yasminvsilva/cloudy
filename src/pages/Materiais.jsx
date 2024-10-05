@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Header from "./Header"
 import arduinoimg from '../assets/materiais/arduino.svg'
 import jumpersimg from '../assets/materiais/jumpers.svg'
 import protoboardimg from '../assets/materiais/protoboard.svg'
@@ -14,12 +13,23 @@ import altofalante from '../assets/materiais/alto-falante.svg'
 import display from '../assets/materiais/display.svg'
 import rtc from '../assets/materiais/moduloRTC.svg'
 
+import arduinoDark from '../assets/materiais_dark/arduinoDark.svg'
+import jumpersDark from '../assets/materiais_dark/jumpersDark.svg'
+import protoboardDark from '../assets/materiais_dark/protoboardDark.svg'
+import resistorDark from '../assets/materiais_dark/resistorDark.svg'
+import umidificadoraDark from '../assets/materiais_dark/umidificadoraDark.svg'
+import releDark from '../assets/materiais_dark/releDark.svg'
+import litioDark from '../assets/materiais_dark/litioDark.svg'
+import ledsDark from '../assets/materiais_dark/ledsDark.svg'
+import bateriaDark from '../assets/materiais_dark/bateriaDark.svg'
+import rtcDark from '../assets/materiais_dark/rtcDark.svg'
+import afDark from '../assets/materiais_dark/afDark.svg'
+import dfDark from '../assets/materiais_dark/dfDark.svg'
+import displayDark from '../assets/materiais_dark/displayDark.svg'
 
-export default function Materiais() {
+export default function Materiais({ isDarkMode }) {
   return (
     <div>
-      <Header />
-
       <div className="
         2xl:px-[180px]
         xl:px-[160px]
@@ -65,292 +75,292 @@ export default function Materiais() {
 
           {/* geral */}
           <div className='flex justify-center mb-12'>
-            <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase'>Geral</p>
+            <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase dark:text-roxo-claro'>Geral</p>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={arduinoimg} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? arduinoDark : arduinoimg} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Arduíno UNO</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>94,90</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Arduíno UNO</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>94,90</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Microcontrolador versátil para diversos projetos.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={jumpersimg} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? jumpersDark : jumpersimg} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Jumpers</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>5,60</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Jumpers</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>5,60</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Cabos para conectar componentes na protoboard.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={protoboardimg} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? protoboardDark : protoboardimg} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Protoboard</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>7,50</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Protoboard</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>7,50</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Placa de ensaio com conexões condutoras.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={resistorimg} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? resistorDark : resistorimg} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Resistor</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>1,50</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Resistor</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>1,50</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Componente que limita a corrente em um circuito.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           {/* aromatizador */}
           <div className='flex justify-center mt-12  mb-12'>
-            <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase'>Aromatizador</p>
+            <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase dark:text-roxo-claro'>Aromatizador</p>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={umidificadora} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? umidificadoraDark : umidificadora} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Placa driver</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>58,04</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Placa driver</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>58,04</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Aumenta a umidade do ar em ambientes fechados.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={modulorele} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? releDark : modulorele} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo relé</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>12,00</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Módulo relé</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>12,00</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Aciona qualquer carga específica energética.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           {/* luminária */}
           <div className='flex justify-center mt-12 mb-12'>
-            <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase'>Luminária</p>
+            <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase dark:text-roxo-claro'>Luminária</p>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className=' mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={leds} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? ledsDark : leds} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Fita LED WS2812B</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>24,80</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Fita LED WS2812B</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>24,80</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Emissores de luz utilizados em projetos eletrônicos.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={modulorele} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? releDark : modulorele} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo relé</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>12,00</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Módulo relé</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>12,00</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Aciona qualquer carga específica energética.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={modulotp4056} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? litioDark : modulotp4056} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo TP4056</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>5,60</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Módulo TP4056</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>5,60</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Carregador de baterias de lítio contra sobrecarga.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={bateria} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? bateriaDark : bateria} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Bateria</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>32,00</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Bateria</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>32,00</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Carrega carga em componentes eletrônicos.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           {/* reprodutor de música */}
 
           <div className='mt-12 mb-6'>
             <div className='flex justify-center mb-12'>
-              <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase'>Reprodutor de música</p>
+              <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase dark:text-roxo-claro'>Reprodutor de música</p>
             </div>
 
-            <hr className='' />
+            <hr className='dark:border-linha' />
 
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={df} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? dfDark : df} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>DFPlayer Mini</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>22,77</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>DFPlayer Mini</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>22,77</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Módulo de áudio para reproduzir sons e músicas.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={altofalante} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? afDark : altofalante} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Alto falante</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>23,00</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Alto falante</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>23,00</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Dispositivo para emissão de som em sistemas eletrônicos.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           {/* relógio */}
 
           <div className='mt-12 mb-6'>
             <div className='flex justify-center mb-12'>
-              <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase'>Relógio</p>
+              <p className='text-roxo-titulo font-karla font-bold text-[14px] uppercase dark:text-roxo-claro'>Relógio</p>
             </div>
 
-            <hr className='' />
+            <hr className='dark:border-linha' />
 
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={display} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? displayDark : display} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Display LED TM1637</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>15,78</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Display LED TM1637</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>15,78</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Dispositivo que ilustra quatro dígitos do relógio.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
           <div className='mb-6'>
             <div className='flex mt-6 gap-6'>
               <div className='flex items-center'>
-                <img className='w-[70px]' src={rtc} alt="" />
+                <img className='w-[70px]' src={isDarkMode ? rtcDark : rtc} alt="" />
               </div>
 
               <div className=''>
                 <div className='flex justify-between'>
-                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px]'>Módulo RTC</h2>
-                  <p className='text-roxo-titulo font-karla font-bold text-[14px]'>29,99</p>
+                  <h2 className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>Módulo RTC</h2>
+                  <p className='text-roxo-titulo font-karla font-bold text-[14px] dark:text-roxo-claro'>29,99</p>
                 </div>
                 <p className='text-texto-materiais font-overpass text-[14px] mt-2 w-4/5 dark:text-white'>Módulo de relógio para controle preciso de tempo.</p>
               </div>
             </div>
           </div>
 
-          <hr className='md:w-1/3' />
+          <hr className='md:w-1/3 dark:border-linha' />
 
         </motion.div>
 
@@ -366,81 +376,81 @@ export default function Materiais() {
 
             {/* div geral */}
             <div>
-              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Geral</p>
+              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px] dark:text-roxo-claro'>Geral</p>
 
               {/* div para flex */}
               <div className='md:flex md:gap-6 xl:gap-16 2xl:gap-32'>
 
                 {/* div arduíno/jumpers */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo arduíno */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={arduinoimg} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? arduinoDark : arduinoimg} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Arduíno UNO</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Arduíno UNO</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Microcontrolador versátil para diversos projetos.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>89,99</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>89,99</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo jumpers */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={jumpersimg} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? jumpersDark : jumpersimg} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Jumpers</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Jumpers</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Cabos para conectar componentes na protoboard.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>5,60</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>5,60</p>
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
                 </div>
 
                 {/* div protoboard/resistor */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo protoboard */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={protoboardimg} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? protoboardDark : protoboardimg} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Protoboard</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Protoboard</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Placa de ensaio com conexões condutoras.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>7,50</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>7,50</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo resistor */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={resistorimg} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? resistorDark : resistorimg} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Resistor</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Resistor</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Componente que limita a corrente em um circuito.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>1,50</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>1,50</p>
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
                 </div>
               </div>
 
@@ -448,52 +458,52 @@ export default function Materiais() {
 
             {/* div aromatizador */}
             <div className='md:mt-[48px]'>
-              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Aromatizador</p>
+              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px] dark:text-roxo-claro'>Aromatizador</p>
 
               {/* div para flex */}
               <div className='md:flex md:gap-6 xl:gap-16 2xl:gap-32'>
 
                 {/* div placa driver */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo placa driver */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={umidificadora} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? umidificadoraDark : umidificadora} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Placa de driver</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Placa de driver</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Aumenta a umidade do ar em ambientes fechados.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>58,04</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>58,04</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                 </div>
 
                 {/* div módulo relé */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo módulo relé */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={modulorele} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? releDark : modulorele} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo relé</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Módulo relé</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Aciona qualquer carga específica energética.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>12,00</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>12,00</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                 </div>
               </div>
@@ -502,81 +512,81 @@ export default function Materiais() {
 
             {/* div luminária */}
             <div className='md:mt-[48px]'>
-              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Luminária</p>
+              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px] dark:text-roxo-claro'>Luminária</p>
 
               {/* div para flex */}
               <div className='md:flex md:gap-6 xl:gap-16 2xl:gap-32'>
 
                 {/* div led/módulo */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo led */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={leds} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? ledsDark : leds} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Fita LED WS2812B</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Fita LED WS2812B</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Emissores de luz utilizados em projetos eletrônicos.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>24,80</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>24,80</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo rele */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={modulorele} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? releDark : modulorele} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo relé</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Módulo relé</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Aciona qualquer carga específica energética.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>12,00</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>12,00</p>
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
                 </div>
 
                 {/* div protoboard/resistor */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo protoboard */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={modulotp4056} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? litioDark : modulotp4056} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo TP4056</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Módulo TP4056</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Carregador de baterias de lítio contra sobrecarga.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>5,60</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>5,60</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo resistor */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={bateria} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? bateriaDark : bateria} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Bateria</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Bateria</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Carrega carga em componentes eletrônicos.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>32,00</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>32,00</p>
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
                 </div>
               </div>
 
@@ -584,52 +594,52 @@ export default function Materiais() {
 
             {/* div reprodutor de música */}
             <div className='md:mt-[48px]'>
-              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Reprodutor de música</p>
+              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px] dark:text-roxo-claro'>Reprodutor de música</p>
 
               {/* div para flex */}
               <div className='md:flex md:gap-6 xl:gap-16 2xl:gap-32'>
 
                 {/* div dfplayer */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo dfplayer */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={df} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? dfDark : df} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>DFPlayer Mini</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>DFPlayer Mini</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Módulo de áudio para reproduzir sons e músicas.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>22,77</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>22,77</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                 </div>
 
                 {/* div alto falante */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo alto falante */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={altofalante} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? afDark : altofalante} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Alto falante</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Alto falante</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Dispositivo para emissão de som em sistemas eletrônicos.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>23,00</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>23,00</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                 </div>
               </div>
@@ -638,52 +648,52 @@ export default function Materiais() {
 
             {/* div relógio */}
             <div className='md:mt-[48px]'>
-              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px]'>Relógio</p>
+              <p className='md:font-karla md:font-bold md:uppercase md:text-[14px] md:text-roxo-titulo md:text-center md:mb-[48px] dark:text-roxo-claro'>Relógio</p>
 
               {/* div para flex */}
               <div className='md:flex md:gap-6 xl:gap-16 2xl:gap-32'>
 
                 {/* div relógio/rtc */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo relogio */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={display} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? displayDark : display} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Display LED TM1637</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Display LED TM1637</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Dispositivo que ilustra quatro dígitos do relógio.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>15,78</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>15,78</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                 </div>
 
                 {/* div rtc */}
                 <div className='md:w-1/2'>
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                   {/* div conteúdo rtc */}
                   <div className='md:flex md:mt-[24px] md:mb-[24px] md:gap-5'>
-                    <div className='md:flex md:items-center'><img className='md:w-20' src={rtc} alt="" /></div>
+                    <div className='md:flex md:items-center'><img className='md:w-20' src={isDarkMode ? rtcDark : rtc} alt="" /></div>
 
                     {/* div conjunto de textos */}
                     <div>
-                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2'>Módulo RTC</p>
+                      <p className='md:font-karla md:font-bold md:text-[14px] md:text-roxo-titulo md:mb-2 dark:text-roxo-claro'>Módulo RTC</p>
                       <p className='md:font-overpass md:text-[13px] dark:text-white'>Módulo de relógio para controle preciso de tempo.</p>
                     </div>
 
-                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo'>29,99</p>
+                    <p className='md:font-karla md:font-bold md:text-[13px] md:text-roxo-titulo dark:text-roxo-claro'>29,99</p>
 
                   </div>
 
-                  <hr className='' />
+                  <hr className='dark:border-linha' />
 
                 </div>
               </div>

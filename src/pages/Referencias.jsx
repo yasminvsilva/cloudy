@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion';
-import Header from './Header'
 
 export default function SobreNos() {
   return (
     <div>
-        <Header />
-      
         <div className='
         2xl:px-[180px]
         xl:px-[160px]
