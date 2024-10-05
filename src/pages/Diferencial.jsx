@@ -36,10 +36,11 @@ export default function Diferencial({ isDarkMode }) {
 
         <div className='
         lg:hidden
-        relative bg-secao-diferencial w-56 h-48 px-6 py-6 rounded-3xl flex flex-col items-center justify-center mb-7 mx-auto'>
-          <Carrossel />
+        relative bg-secao-diferencial w-56 h-48 px-6 py-6 rounded-3xl flex flex-col items-center justify-center mb-7 mx-auto
+        dark:bg-bg-cards dark:text-white'>
+          <Carrossel isDarkMode={isDarkMode} />
         </div>
-
+ 
         <div className='
         lg:hidden
         mb-20'>

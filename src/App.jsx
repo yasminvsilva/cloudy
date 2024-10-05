@@ -5,12 +5,12 @@ import Inicial from './pages/Inicial.jsx';
 import Beneficios from './pages/Beneficios.jsx';
 import Apresentacao from './pages/Apresentacao.jsx';
 import Diferencial from './pages/Diferencial.jsx';
-import Home from './pages/Home';
 import Guia from './pages/Guia';
 import Materiais from './pages/Materiais';
 import Referencias from './pages/Referencias';
 import SobreNos from './pages/SobreNos';
 import Footer from './pages/Footer';
+import BotaoSubir from './components/BotaoSubir.jsx'
 
 import { useState, useEffect } from 'react';
 
@@ -28,6 +28,7 @@ export default function App() {
   return (
     <Router>
       <div>
+        <BotaoSubir isDarkMode={isDarkMode} />
         <main className="2xl:px-[300px] lg:px-[110px] lg:py-[55px] md:px-[48px] md:py-[55px] px-[32px] py-[50px]">
           <Routes>
             <Route 
