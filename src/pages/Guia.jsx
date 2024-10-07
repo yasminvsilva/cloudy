@@ -62,7 +62,7 @@ export default function Guia({ isDarkMode }) {
                 xl:text-[18px]
                 md:w-[95%] md:mb-0
                 font-overpass text-[16px] text-justify mb-12 dark:text-white">
-                Primeiro, conecte o Cloudy à energia elétrica usando o cabo fornecido. Depois, configure o relógio de acordo com suas preferências. Por último, adicione água e óleo de lavanda ao reservatório para iniciar a aromaterapia.
+                Primeiro, conecte o Cloudy à energia elétrica usando o cabo fornecido. Depois, adicione água e óleo de lavanda ao reservatório para iniciar a aromaterapia. Por último, configure o aparelho de acordo com suas preferências.
                 </p>
             </div>
 
@@ -104,7 +104,7 @@ export default function Guia({ isDarkMode }) {
                     <p className="
                     xl:text-[18px]
                     md:mb-0 
-                    font-overpass text-[16px] text-justify mb-12 dark:text-white">Ajuste a duração da difusão do óleo essencial para se adequar ao seu ciclo de sono e escolha entre músicas relaxantes e ruídos brancos. Ajuste o volume do som conforme necessário.</p>
+                    font-overpass text-[16px] text-justify mb-12 dark:text-white">Selecione um dos modos disponibilizados no aplicativo ou personalize a duração da difusão do óleo essencial para se adequar ao seu ciclo de sono. Escolha entre músicas relaxantes e ruídos brancos conforme a preferência.</p>
                 </div>
             </div>
 
@@ -167,7 +167,7 @@ export default function Guia({ isDarkMode }) {
                     font-overpass text-[16px] text-center mb-8 dark:text-white">Verifique se todas as configurações estão ajustadas.</p>
                     <p className="
                     xl:text-[18px]
-                    font-overpass text-[16px] text-center dark:text-white">Ative o Cloudy pressionando o botão de ligar/desligar.</p>
+                    font-overpass text-[16px] text-center dark:text-white">Ative o Cloudy definindo o modo ou o timer.</p>
                 </div>
             </div>
 
