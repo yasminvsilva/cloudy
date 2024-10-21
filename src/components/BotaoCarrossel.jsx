@@ -29,7 +29,7 @@ const BotaoCarrossel = () => {
         <button
           key={index}
           className={`h-[11px] rounded-[10px] transition-all duration-600 ${
-            index === currentIndex ? 'w-11 bg-azul-carrossel dark:bg-botaoTransicao' : 'w-4 bg-cinza-carrossel dark:bg-botaoCarrossel'
+            index === currentIndex ? 'w-11 bg-azul-carrossel dark:bg-botaoCarrossel' : 'w-4 bg-cinza-carrossel dark:bg-botaoTransicao'
           } ${isAnimating && index === currentIndex ? 'animate-pulse' : ''}`}
           onClick={() => {
             setIsAnimating(true);

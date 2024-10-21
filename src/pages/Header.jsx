@@ -78,7 +78,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
     //   hasScrolled ? 'bg-white dark:bg-background-black shadow-lg py-6' : ''
     // }`}>
 
-      <div className='flex justify-between'>
+      <div className='flex w-full justify-between max-w-[1440px]'>
         <div className='
       md:w-[80px]
       hover:cursor-pointer flex justify-between dark:w-[83px]' onClick={() => navegacao('/')}>
@@ -127,7 +127,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
             </button>
           </a>
 
-          <button onClick={() => setIsDarkMode(!isDarkMode)}>
+          <button onClick={() => setIsDarkMode(!isDarkMode)} className="">
             <img className='hidden md:block md:w-8'
               src={isDarkMode ? solLight : luaDesktop}
               alt="Ícone de lua"
