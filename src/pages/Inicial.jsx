@@ -26,10 +26,11 @@ export default function Inicial({ isDarkMode }) {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}className='
-              2xl:w-3/4 2xl:text-[20px] 2xl:mt-14 2xl:mb-16
+              2xl:w-[520px] 2xl:text-[20px] 2xl:mt-14 2xl:mb-16
+              xl:w-[450px]
               lg:w-96 lg:mt-12 lg:mb-12
               md:w-72
-              font-overpass text-[18px] text-justify mb-10 dark:text-white'>Experimente o Cloudy como uma abordagem para melhorar as suas noites de sono</motion.p>
+              font-overpass text-[18px] text-justify mb-10 dark:text-white'>O Cloudy é um aromatizador de óleo essencial de lavanda feito para melhorar as suas noites de sono.</motion.p>
       
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
