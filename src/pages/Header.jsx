@@ -73,11 +73,6 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
   }, [isHeaderOpen]);
 
   return (
-
-    // <div className={`sticky top-0 z-50 transition-all duration-300 ease-in-out ${
-    //   hasScrolled ? 'bg-white dark:bg-background-black shadow-lg py-6' : ''
-    // }`}>
-
       <div className='flex w-full justify-between max-w-[1440px]'>
         <div className='
       md:w-[80px]
@@ -100,6 +95,12 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
             className={`${location.pathname === '/guia' ? 'text-roxo-claro' : 'dark:text-branco dark:hover:text-roxo-claro hover:text-roxo-claro'}`}
           >
             Guia
+          </button>
+          <button
+            onClick={() => navegacao('/jogo')}
+            className={`${location.pathname === '/jogo' ? 'text-roxo-claro' : 'dark:text-branco dark:hover:text-roxo-claro hover:text-roxo-claro'}`}
+          >
+            Jogo
           </button>
           <button
             onClick={() => navegacao('/materiais')}
@@ -187,6 +188,8 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                       className={`${location.pathname === '/' ? 'text-roxo-claro font-karla dark:hover:text-roxo-titulo' : 'dark:text-white dark:hover:text-roxo-titulo hover:text-roxo-claro font-karla'}`}>Home</button></li>
                     <li><button onClick={() => navegacao('/guia')}
                       className={`${location.pathname === '/guia' ? 'text-roxo-claro font-karla dark:hover:text-roxo-titulo' : 'dark:text-white dark:hover:text-roxo-titulo hover:text-roxo-claro font-karla'}`}>Guia</button></li>
+                    <li><button onClick={() => navegacao('/jogo')}
+                      className={`${location.pathname === '/jogo' ? 'text-roxo-claro font-karla dark:hover:text-roxo-titulo' : 'dark:text-white dark:hover:text-roxo-titulo hover:text-roxo-claro font-karla'}`}>Jogo</button></li>
                     <li><button onClick={() => navegacao('/referencias')}
                       className={`${location.pathname === '/referencias' ? 'text-roxo-claro font-karla dark:hover:text-roxo-titulo' : 'dark:text-white hover:text-roxo-claro font-karla'}`}>Referências</button></li>
                     <li><button onClick={() => navegacao('/materiais')}

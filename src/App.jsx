@@ -6,6 +6,7 @@ import Beneficios from './pages/Beneficios.jsx';
 import Apresentacao from './pages/Apresentacao.jsx';
 import Diferencial from './pages/Diferencial.jsx';
 import Guia from './pages/Guia';
+import Jogo from './pages/Jogo.jsx';
 import Materiais from './pages/Materiais';
 import Referencias from './pages/Referencias';
 import SobreNos from './pages/SobreNos';
@@ -31,8 +32,8 @@ export default function App() {
         <BotaoSubir isDarkMode={isDarkMode} />
         <main className="2xl:px-[300px] lg:px-[110px] lg:py-[55px] md:px-[48px] md:py-[55px] px-[32px] py-[50px]">
           <Routes>
-            <Route 
-              path="/" 
+            <Route
+              path="/"
               element={
                 <>
                   <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
@@ -41,34 +42,42 @@ export default function App() {
                   <Diferencial isDarkMode={isDarkMode} />
                   <Beneficios isDarkMode={isDarkMode} />
                 </>
-              } 
+              }
             />
-            <Route 
-              path="/guia" 
+            <Route
+              path="/guia"
               element={
                 <>
                   <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
                   <Guia isDarkMode={isDarkMode} />
                 </>
               } />
-            <Route 
-              path="/materiais" 
+            <Route
+              path="/jogo"
+              element={
+                <>
+                  <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+                  <Jogo isDarkMode={isDarkMode} />
+                </>
+              } />
+            <Route
+              path="/materiais"
               element={
                 <>
                   <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
                   <Materiais isDarkMode={isDarkMode} />
                 </>
               } />
-            <Route 
-              path="/referencias" 
+            <Route
+              path="/referencias"
               element={
                 <>
                   <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
                   <Referencias />
                 </>
-                } />
-            <Route 
-              path="/sobrenos" 
+              } />
+            <Route
+              path="/sobrenos"
               element={
                 <>
                   <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
