@@ -243,7 +243,7 @@ export default function Guia({ isDarkMode }) {
                     <iframe
                         className='w-[300px] h-[200px] lg:w-[450px]'
                         src="https://www.youtube.com/embed/uOXS-Qd1lq4"
-                        title="Lost Essences Preview"
+                        title="Cloudy's Presentation"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
