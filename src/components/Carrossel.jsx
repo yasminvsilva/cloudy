@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// imgs
+// imagens
 import lavanda from '../assets/iconeLavanda.svg';
 import lavandaDark from '../assets/lavandaDark.svg'; // Adicione a imagem para o modo escuro
 import luminaria from '../assets/iconeLuminaria.svg';
